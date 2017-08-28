@@ -8,6 +8,7 @@ $befloxatone: #491414;
 $befunolol: #D6602D;
 $dusk: #EEDD99;
 
+$vitaminC: #FF9900;
 $route66: #424242;
 $steadygrey: #E9E9E9;
 $bc: #BCBCBC;
@@ -28,8 +29,19 @@ canvas {
 	background-color: $steadygrey;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
 	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 24pt;
+}
+
+h2 {
+	font-weight: normal;
+	font-style: normal;
 }
 
 div#main {
@@ -43,4 +55,46 @@ div#main {
 	bottom: 20%;
 	top: 10%;
 	padding: 10pt;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 11pt;
+}
+
+img.me {
+	float: left;
+	height: 30ex;
+	border: solid $bc 1pt;
+	margin: 0;
+	margin-right: 10pt;
+	padding: 0;
+}
+
+span.emph {
+	font-family: 'PT Serif', serif;
+	font-style: italic;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	font-family: 'PT Sans', sans-serif;
+	color: $steadygrey;
+	background: $route66;
+	padding: 0 5pt;
+	text-decoration: none;
+	transition: background .5s, color .5s
+}
+
+@keyframes shine {
+	0% {background: $route66; color: $steadygrey;}
+	60% {background: $vitaminC; color: white;}
+	100% {background: white; color: white;}
+}
+
+a:hover {
+	color: $route66;
+	background: $vitaminC;
+	transition: background .5s, color .5s
 }
