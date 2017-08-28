@@ -1,9 +1,12 @@
 ---
 ---
 
-$fill: rgba(115,115,115, .8);
-$stroke: #C8C8A9;
-$text: #E1F0D3;
+$vinecharcoal: #737373;
+$gravel: #5E5E5E;
+$stetson: #1F0808;
+$befloxatone: #491414;
+$befunolol: #D6602D;
+$dusk: #EEDD99;
 
 body {
 	margin: 0;
@@ -18,7 +21,7 @@ canvas {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #00080E;
+	background-color: $stetson;
 }
 
 h1 {
@@ -26,11 +29,11 @@ h1 {
 }
 
 div#main {
-	color: $text;
+	color: $dusk;
 	position: absolute;
-	background: $fill;
+	background: $stetson;
 	opacity: 1;
-	border: solid $stroke 2pt;
+	border: solid $befunolol 1pt;
 	left: 15%;
 	right: 15%;
 	bottom: 20%;
