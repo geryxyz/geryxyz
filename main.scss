@@ -44,6 +44,11 @@ h2 {
 	font-style: normal;
 }
 
+h3 {
+	margin-top: 2ex;
+	margin-bottom: .5ex;
+}
+
 div#main {
 	color: $route66;
 	position: absolute;
@@ -59,6 +64,43 @@ div#main {
 	font-size: 11pt;
 }
 
+p {
+	margin: 0;
+	margin-bottom: 2ex;
+	padding: 0;
+}
+
+@keyframes slideout {
+	0% { right: 50%; opacity: 0; }
+	100% { right: 85.5%; opacity: 1; }
+}
+
+div#menu-container {
+	position: absolute;
+	top: 10%;
+	right: 85.5%;
+	opacity: 0;
+	animation: .75s ease-out 0s 1 slideout;
+	animation-fill-mode: forwards;
+}
+
+div#menu-container ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 70pt;
+}
+
+div#menu-container li {
+	padding: 1pt;
+}
+
+div#menu-container li a {
+	display: block;
+	text-align: right;
+	padding: 1pt 5pt;
+}
+
 img.me {
 	float: left;
 	height: 30ex;
@@ -71,11 +113,6 @@ img.me {
 span.emph {
 	font-family: 'PT Serif', serif;
 	font-style: italic;
-}
-
-p {
-	margin: 0;
-	padding: 0;
 }
 
 a{
