@@ -52,6 +52,7 @@ h3 {
 div#main {
 	color: $route66;
 	position: absolute;
+	overflow-y: scroll;
 	background: $steadygrey;
 	opacity: 1;
 	border: solid $bc 2pt;
