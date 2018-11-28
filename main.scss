@@ -73,6 +73,11 @@ p {
 	padding: 0;
 }
 
+p.code {
+	font-family: monospace, monospace;
+	border-left: solid, black, 5pt;
+}
+
 @keyframes slideout {
 	0% { right: 50%; opacity: 0; }
 	100% { right: 85.5%; opacity: 1; }
