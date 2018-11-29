@@ -75,7 +75,8 @@ p {
 
 p.code {
 	font-family: monospace, monospace;
-	border-left: solid black 5pt;
+	border-left: solid $bc 3pt;
+	padding-left: 5pt
 }
 
 @keyframes slideout {
