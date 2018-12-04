@@ -61,30 +61,63 @@ A szakkör során a tanulók megismerkedhetnek a gráf alapú adatreprezentáci�
 <p class="overview"><span class="emph">(40 perc)</span><br/>Egy filmajánló rendszer megvalósítása IMDB alapján, egy <a href="https://neo4j.com/sandbox-v2/">példa adatbázison</a> keresztül.<br/>
 Online angol nyelvű oktató anyag elérhető a <a href="https://guides.neo4j.com/sandbox/recommendations/index.html">Neo4J Sandboxban</a>
 </p>
+
+<h3>Keressünk egy példa filmet</h3>
+
+<p class="code">
+match (m:Movie) return m.title
+</p>
+
+<h3>Érdekes filmek lekérdezése felhasználónkként</h3>
+
+<p>Ki szeretti még a Crimson Tide-ot?</p>
+
+<p class="code">
+match (liked:Movie {title: "Crimson Tide"})<-[:RATED]-(user:User)<br/>
+return *
+</p>
+
+<p>Milyen más filmeket szeret aki szereti a Crimson Tide-ot?</p>
+
+<p class="code">
+match (liked:Movie {title: "Crimson Tide"})<-[:RATED]-(user:User)<br/>
+with liked, user limit 5<br/>
+match (user)-[:RATED]->(other:Movie)<br/>
+return * limit 35
+</p>
+
+<p class="code">Melyik filmet nézzem ha szeretem a Crimson Tide-ot?</p>
+
+<p class="code">
+match (liked:Movie {title: "Crimson Tide"})<-[:RATED]-(user:User)-[:RATED]->(other:Movie)<br/>
+return other.title as recommendation, collect(user.name) as usersWhoAlsoWatched, liked.title<br/>
+limit 10
+</p>
+
+<p class="code">
+match (liked:Movie {title: "Crimson Tide"})<-[:RATED]-(user:User)-[:RATED]->(other:Movie)<br/>
+return other.title as recommendation, count(user) as similarity, liked.title as liked<br/>
+order by similarity desc limit 10<br/>
+</p>
+
+<h3>Hasonló műfajú filmek keresése</h3>
+
 <ul>
-  <li>érdekes filmek lekérdezése felhasználónkként</li>
   <li>halmazelméleti alapok</li>
-  <li>hasonlóság fogalma és kiszámítása</li>
-  <li>szomszédos csomópontok (filmek) hasonlósága saját preferenciával (Jaccard)
-    <ul>
-      <li><details><summary>megoldás</summary><p class="code">
-        MATCH (m:Movie {title: "Inception"})-[:IN_GENRE]->(g:Genre)<-[:IN_GENRE]-(other:Movie)<br/>
-        WITH m, other, COUNT(g) AS intersection, COLLECT(g.name) AS i<br/>
-        MATCH (m)-[:IN_GENRE]->(mg:Genre)<br/>
-        WITH m,other, intersection,i, COLLECT(mg.name) AS s1<br/>
-        MATCH (other)-[:IN_GENRE]->(og:Genre)<br/>
-        WITH m,other,intersection,i, s1, COLLECT(og.name) AS s2<br/>
-        <br/>
-        WITH m,other,intersection,s1,s2<br/>
-        <br/>
-        WITH m,other,intersection,s1+filter(x IN s2 WHERE NOT x IN s1) AS union, s1, s2<br/>
-        <br/>
-        RETURN m.title, other.title, s1,s2,((1.0*intersection)/SIZE(union)) AS jaccard ORDER BY jaccard DESC LIMIT 100<br/>
-        </p></details></li>
-      <li>általános metszet: <a href="https://neo4j.com/developer/kb/performing-match-intersection/">Performing match intersection</a></li>
-    </ul>
-  </li>
-  <li>sorbarendezés hasonlóság szerint</li>
-  <li>ajánlott filmek kiválasztása (hasonlók által kedvelt)</li>
-  <li>ajánlások rendezése IMDB rank szerint</li>
+  <li><a href="https://en.wikipedia.org/wiki/Jaccard_index">Jaccard-féle hasonlóság</a> fogalma és kiszámítása</li>
 </ul>
+
+<p class="code">
+match (m:Movie {title: "Inception"})-[:IN_GENRE]->(g:Genre)<-[:IN_GENRE]-(other:Movie)<br/>
+with m, other, count(g) as intersection, collect(g.name) as i<br/>
+match (m)-[:IN_GENRE]->(mg:Genre)<br/>
+with m,other, intersection,i, collect(mg.name) as s1<br/>
+match (other)-[:IN_GENRE]->(og:Genre)<br/>
+with m,other,intersection,i, s1, collect(og.name) as s2<br/>
+<br/>
+with m,other,intersection,s1,s2<br/>
+<br/>
+with m,other,intersection,s1+filter(x in s2 where not x in s1) as union, s1, s2<br/>
+<br/>
+return m.title, other.title, s1,s2,((1.0*intersection)/size(union)) as jaccard order by jaccard desc limit 10<br/>
+</p>
