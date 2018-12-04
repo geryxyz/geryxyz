@@ -35,6 +35,19 @@ A szakkör során a tanulók megismerkedhetnek a gráf alapú adatreprezentáci�
 <p class="overview"><span class="emph">(20 perc)</span><br/>Neo4J gráf adatbázis szerkezete és a <a href="https://neo4j.com/developer/cypher-query-language/">Cypher lekérdező nyelv</a>. Üres adatbázis létrehozása és feltöltése egy <a href="https://neo4j.com/sandbox-v2/">példa adatbázison</a> keresztül.</p>
 <ul>
   <li>Neo4J gráf modell</li>
+  <li>Cypher szintaxis
+    <ul>
+      <li><details><summary>Példa</summary><p class="code">
+        MATCH (m:Movie)<-[:RATED]-(u:User) <span class="comment">//Search for an existing graph pattern</span></br>
+        WHERE m.title CONTAINS "Matrix" <span class="comment">//Filter matching paths to only those matching a predicate</span></br>
+        WITH m.title AS movie, COUNT(*) AS reviews <span class="comment">//Count number of paths matched for each movie</span></br>
+        RETURN movie, reviews <span class="comment">//Specify columns to be returned by the statement</span></br>
+        ORDER BY reviews DESC <span class="comment">//Order by number of reviews, in descending order</span></br>
+        LIMIT 5; <span class="comment">//Only return first five records</span></br>
+        </p></details>
+      </li>
+    </ul>
+  </li>
   <li>minta illesztés</li>
   <li>változók</li>
   <li>feltételek</li>
