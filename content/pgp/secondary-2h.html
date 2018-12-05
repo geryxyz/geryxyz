@@ -38,12 +38,12 @@ A szakkör során a tanulók megismerkedhetnek a gráf alapú adatreprezentáci�
   <li>Cypher szintaxis
     <ul>
       <li><details><summary>Példa</summary><pre class="code">
-        MATCH (m:Movie)<-[:RATED]-(u:User) <span class="comment">//Search for an existing graph pattern</span>
-        WHERE m.title CONTAINS "Matrix" <span class="comment">//Filter matching paths to only those matching a predicate</span>
-        WITH m.title AS movie, COUNT(*) AS reviews <span class="comment">//Count number of paths matched for each movie</span>
-        RETURN movie, reviews <span class="comment">//Specify columns to be returned by the statement</span>
-        ORDER BY reviews DESC <span class="comment">//Order by number of reviews, in descending order</span>
-        LIMIT 5; <span class="comment">//Only return first five records</span>
+MATCH (m:Movie)<-[:RATED]-(u:User) <span class="comment">//Search for an existing graph pattern</span>
+WHERE m.title CONTAINS "Matrix" <span class="comment">//Filter matching paths to only those matching a predicate</span>
+WITH m.title AS movie, COUNT(*) AS reviews <span class="comment">//Count number of paths matched for each movie</span>
+RETURN movie, reviews <span class="comment">//Specify columns to be returned by the statement</span>
+ORDER BY reviews DESC <span class="comment">//Order by number of reviews, in descending order</span>
+LIMIT 5; <span class="comment">//Only return first five records</span>
         </pre></details>
       </li>
     </ul>
