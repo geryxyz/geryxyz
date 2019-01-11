@@ -226,7 +226,7 @@ if __name__ == '__main__':
 
 <p>üzenetek szinezése <a href="https://pypi.org/project/colorama/">colorama modullal</a></p>
 
-<pre class="code">
+<pre class="code"><code class="python">
 import pdb
 import colorama
 
@@ -251,7 +251,7 @@ def question(text):
 
 if __name__ == '__main__':
   pdb.set_trace()  
-</pre>
+</code></pre>
 
 
 <h2>Filmajánló rendszer megvalósítása</h2>
@@ -271,7 +271,7 @@ order by jaccard desc limit 10
 <h3>Beégetett ajánlás megvalósítása</h3>
 
 <p>Mellyek az Inception műfajai?</p>
-<pre class="code">
+<pre class="code"><code class="python">
 def get_liked_genre():
   query = '''
   match (liked:Movie {title: "Inception"})-[:IN_GENRE]->(likedGenre:Genre)
@@ -281,11 +281,11 @@ def get_liked_genre():
   for record in session.run(query):
     names.append(record['name'])
   return names
-</pre>
+</code></pre>
 
 <p>Keressük ki a filmek műfajait!</p>
 
-<pre>
+<pre><code class="python">
 def get_movies():
   query = '''
   match (m:Movie)
@@ -305,13 +305,13 @@ def get_genre_of(title):
   for record in session.run(query, parameters={'title': title}):
     names.append(record['name'])
   return names
-</pre>
+</code></pre>
 
 <img src="/content/pgp/paramter-python-cyper.png"/>
 
 <p>Refactoring - egyszerűsítsük a kódot</p>
 
-<pre class="code">
+<pre class="code"><code class="python">
 def getAll(query, property, parameters={}):
   values = []
   for record in session.run(query, parameters=parameters):
@@ -334,11 +334,11 @@ def get_genre_of(title):
   return likedGenre.name as name
   '''
   return getAll(query, 'name', parameters={'title': title})
-</pre>
+</code></pre>
 
 <p>Hasonlóság kiszámítása</p>
 
-<pre class="code">
+<pre class="code"><code class="python">
 def jaccard():
   likedGenres = set(get_liked_genre())
   similarMovies = []
@@ -350,11 +350,11 @@ def jaccard():
     entry = (title, similarity)
     similarMovies.append(entry)
   return similarMovies
-</pre>
+</code></pre>
 
 <p>Optimalizálás - gyorsítsuk fel a kódot</p>
 
-<pre class="code">
+<pre class="code"><code class="python">
 def jaccard_slow():
   likedGenres = set(get_liked_genre())
   similarMovies = []
@@ -381,11 +381,11 @@ def jaccard():
     info("similarity of %s is %f" % item)
     similarMovies.append(item)
   return similarMovies
-</pre>
+</code></pre>
 
 <p>Melyik filmet nézzem legközelebb?</p>
 
-<pre class="code">
+<pre class="code"><code class="python">
 def jaccard():
   similarMovies = []
   for db_entry in get_sets():
@@ -409,7 +409,7 @@ if __name__ == '__main__':
   info("The top 10 movies you should watch:")
   for i, entry in enumerate(recommend()):
     info("   %dth %s" % (i+1, entry[0]))
-</pre>
+</code></pre>
 
 <h3>Paraméteres ajánlás megvalósítása</h3>
 
