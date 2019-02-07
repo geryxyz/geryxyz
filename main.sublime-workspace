@@ -8,6 +8,30 @@
 				"p\tTag"
 			],
 			[
+				"ul",
+				"ul\tTag"
+			],
+			[
+				"img",
+				"img\tTag"
+			],
+			[
+				"a",
+				"a\tTag"
+			],
+			[
+				"pre",
+				"pre\t<pre>"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"style",
+				"style\tAttr"
+			],
+			[
 				"o",
 				"otherTitle"
 			],
@@ -62,10 +86,6 @@
 			[
 				"name",
 				"names"
-			],
-			[
-				"pre",
-				"pre\tTag"
 			],
 			[
 				"hrf",
@@ -316,10 +336,6 @@
 				"lim_vertex"
 			],
 			[
-				"style",
-				"style=\"height"
-			],
-			[
 				"col",
 				"colspan=\"2"
 			],
@@ -498,27 +514,47 @@
 			[
 				"j",
 				"json_graphs"
-			],
-			[
-				"input",
-				"inputs"
-			],
-			[
-				"cla",
-				"clap"
-			],
-			[
-				"TR",
-				"traversal_source"
-			],
-			[
-				"source",
-				"source_name"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "content/os-in-school/university.html",
+			"settings":
+			{
+				"buffer_size": 1786,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/teaching.html",
+			"settings":
+			{
+				"buffer_size": 1466,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/os-in-school/history-of-os.html",
+			"settings":
+			{
+				"buffer_size": 2450,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/os-in-school/partition.html",
+			"settings":
+			{
+				"buffer_size": 3221,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -592,10 +628,18 @@
 	},
 	"expanded_folders":
 	[
-		"/F/project/geryxyz.github.io"
+		"/F/project/geryxyz.github.io",
+		"/F/project/geryxyz.github.io/_includes",
+		"/F/project/geryxyz.github.io/content",
+		"/F/project/geryxyz.github.io/content/os-in-school",
+		"/F/project/geryxyz.github.io/files",
+		"/F/project/geryxyz.github.io/files/oprend"
 	],
 	"file_history":
 	[
+		"/F/project/geryxyz.github.io/content/os-in-school/dfsetup222.zip",
+		"/F/project/geryxyz.github.io/content/teaching.html",
+		"/F/project/geryxyz.github.io/main.sublime-project",
 		"/F/project/geryxyz.github.io/content/pgp/secondary-4h.html",
 		"/F/project/geryxyz.github.io/content/pgp/python-w2w/what2watch.py",
 		"/F/project/geryxyz.github.io/_includes/header.html",
@@ -604,7 +648,6 @@
 		"/F/project/iFL/interactive-fl/icst-tooldemo/.main.tex.swp",
 		"/F/project/iFL/iFL-eclipse-plugin/org.eclipse.sed.ifl/samples/sampleFor_sample.csv",
 		"/F/project/geryxyz.github.io/content/pgp/python-w2w/w2w.py",
-		"/F/project/geryxyz.github.io/content/teaching.html",
 		"/C/Users/geryxyz/Downloads/Hatalom-kártyák.txt",
 		"/F/project/geryxyz.github.io/content/os-in-school/university.html",
 		"/F/project/geryxyz.github.io/content/os-in-school/secondary.html",
@@ -721,9 +764,7 @@
 		"/Q/team/gyimi/gyimi-kut/Papers/chain-fl/data/commons-lang/commons-lang.agg.1.csv",
 		"/S/historical_package_changes/oryx.csv",
 		"/F/project/jss/ILYA-test-clustering/.gitignore",
-		"/F/project/jss/ILYA-test-clustering/.git/config",
-		"/F/project/jss/ILYA-test-clustering/algorithm.py",
-		"/F/project/jss/ILYA-test-clustering/gremlin_uploader.py"
+		"/F/project/jss/ILYA-test-clustering/.git/config"
 	],
 	"find":
 	{
@@ -741,6 +782,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\u0003"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -748,6 +790,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"\\n"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -758,8 +801,122 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "content/os-in-school/university.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1786,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								861,
+								861
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "content/teaching.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								589,
+								589
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "content/os-in-school/history-of-os.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								657,
+								657
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "content/os-in-school/partition.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1196,
+								1196
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -806,7 +963,7 @@
 	"project": "main.sublime-project",
 	"replace":
 	{
-		"height": 68.0
+		"height": 88.0
 	},
 	"save_all_on_build": true,
 	"select_file":
