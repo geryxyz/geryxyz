@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"requires\t(partition.html)"
+			],
+			[
 				"p",
 				"p\tTag"
 			],
@@ -122,10 +126,6 @@
 			[
 				"_",
 				"_names"
-			],
-			[
-				"re",
-				"result"
 			],
 			[
 				"C",
@@ -550,7 +550,7 @@
 			"file": "content/os-in-school/partition.html",
 			"settings":
 			{
-				"buffer_size": 3221,
+				"buffer_size": 3422,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -567,6 +567,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
 			[
 				"wr",
 				"Word Wrap: Toggle"
@@ -637,6 +641,8 @@
 	],
 	"file_history":
 	[
+		"/F/project/perr2019/main.txt",
+		"/F/project/iFL/iFL4Eclipse-public/README.md",
 		"/F/project/geryxyz.github.io/content/os-in-school/dfsetup222.zip",
 		"/F/project/geryxyz.github.io/content/teaching.html",
 		"/F/project/geryxyz.github.io/main.sublime-project",
@@ -762,9 +768,7 @@
 		"/Q/team/gyimi/gyimi-kut/Papers/chain-fl/data/commons-lang/commons-lang-stat.csv",
 		"/Q/team/gyimi/gyimi-kut/Papers/chain-fl/data/commons-lang/commons-lang.method.agg.1.csv",
 		"/Q/team/gyimi/gyimi-kut/Papers/chain-fl/data/commons-lang/commons-lang.agg.1.csv",
-		"/S/historical_package_changes/oryx.csv",
-		"/F/project/jss/ILYA-test-clustering/.gitignore",
-		"/F/project/jss/ILYA-test-clustering/.git/config"
+		"/S/historical_package_changes/oryx.csv"
 	],
 	"find":
 	{
@@ -792,7 +796,7 @@
 		[
 			"\\n"
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -895,15 +899,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3221,
+						"buffer_size": 3422,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1196,
-								1196
+								764,
+								764
 							]
 						],
 						"settings":
@@ -911,7 +915,7 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -922,7 +926,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 36.0
+		"height": 48.0
 	},
 	"input":
 	{
