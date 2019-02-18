@@ -1,0 +1,118 @@
+---
+layout: course
+---
+<h1>Virtualizáció</h1>
+
+<p>„A virtualizáció egy keret rendszer vagy módszer, a számítógép
+erőforrásainak felosztására, egy többszörös megvalósító
+környezetre, alkalmazva egy vagy több koncepciót vagy
+technológiát, mint a hw és sw felosztás, az időosztás, a
+részleges vagy teljes gép szimuláció, emuláció, minőségi
+szolgáltatás, konszolidáció, és sok más.” [Vasvári]</p>
+
+<p>„virtualization—the ability to abstract a physical server into a
+virtual machine” [Portnoy]</p>
+
+<p>„Virtualization is a disruptive technology, shattering the status
+quo of how physical computers are handled, services are
+delivered, and budgets are allocated.” [Portnoy]</p>
+
+<p>„Virtualization in computing often refers to the abstraction of
+some physical component into a logical object.” [Portnoy]</p>
+
+<p>virtuális gép (VM) képes minden hardware erőforrás
+virtualizálására (processzor, memória, tárhely, hálózati
+kapcsolatok)</p>
+<p>virtuális gép monitor (VMM) a szoftver, amin a VM üzemel
+(ma hypervisor)</p>
+
+<ul>
+<li>Hűség (fidelity) – a környezet, amit a VM számára készít meg kell,
+hogy egyezzen az eredetivel (a fizikai hardware-rel)</li>
+<li>Biztonság (Isolation or safety) – a VMM-nek teljes vezérléssel kell
+rendelkeznie az erőforrások fölött</li>
+<li>Performancia (perormance) – minimális különbség lehet a VM és
+a fizikai gép performanciája között</li>
+</ul>
+
+<h2>Motiváció</h2>
+<ul>
+<li>Alacsonyan kihasznált hardware</li>
+<li>Az adatközpontokban a hely hiánya</li>
+<li>A növekvő energia költségek</li>
+<li>Az adminisztratív költségek szignifikáns növekedése</li>
+</ul>
+
+<h2>Felhasználás szerint</h2>
+
+<h3>Szerver virtualizáció</h3>
+<p>szerver erőforrásoknak az elfedése a szerver felhasználói elől, beleértve az egyes fizikai szervereket, processzorokat, és az operációs rendszereket</p>
+<h4>Hypervisor</h4>
+<p>fizikai réteg absztrakciója és szolgáltatása a virtuális szervereknek vagy virtuális gépeknek</p>
+<p>Közvetlen a szerverre kerül telepítésre, nincs köztes OS a fizikai eszközökön</p>
+<p>A fizikai szerver hardware eszközeinek valamint a virtuális gép virtuális eszközeinek az interface-eként szolgál</p>
+<h4>Virtuális gép</h4>
+<p>Az alkalmazások motorjai</p>
+<p>A fizikai gépek szolgáltatásaival rendelkeznek (operációs rendszer, alkalmazások, hálózati kapcsolatok, stb.)</p>
+<p>Klónozhatóak, upgradelhetőek, mozgathatóak, stb.</p>
+
+<h3>Desktop virtualizáció</h3>
+<p>A végfelhasználó számára lehetővé teszi, egy desktop
+környezetben a jogosult hozzáférést, valamely
+alkalmazáshoz, attól függetlenül, hogy pillanatnyilag az
+alkalmazás hol van elhelyezve</p>
+<h4>Virtual desktop</h4>
+<ul>
+<li>Erős, megbízható szervereken futnak</li>
+<li>Vékony klienseken keresztül érik el őket<br/>
+5-7 évente cserélhetőek<br/>
+10% energiafogyaszás rendes PC-hez képest
+</li>
+<li>Könnyen újratelepíthetőek, cserélhetőek</li>
+<li>Biztonsági megoldások (vírusírtók, stb)</li>
+</ul>
+<h4>Minta technológiák</h4>
+<ul>
+<li>Citrix XenDesktop</li>
+<li>VMWare View</li>
+</ul>
+
+<h3>Alkalmazás virtualizáció</h3>
+<p>A végfelhasználó rendelkezésére áll, egy távoli, központi
+szerverről, egy alkalmazás, illetve tárolók anélkül, hogy a
+felhasználó lokális rendszerén teljesen installálni kellene azt</p>
+<ul>
+<li>Alkalmazások könnyű telepítése</li>
+<li>Különböző alkalmazások interakciója</li>
+</ul>
+<h4>Minta technológiák</h4>
+<ul>
+<li>Microsoft App-V</li>
+<li>Citrix Application Streaming</li>
+<li>VMware Thin App</li>
+</ul>
+
+<h2>Architechtúra szerint</h2>
+
+<h3>Szoftver virtualizáció</h3>
+<p>A hypervisor elkapja a műveleteket, amit az OS használna és szoftveresen emulálja a műveletek végrehajtását.</p>
+<p>Guest OS szempontjából láthatatlan a hypervisor</p>
+<p>Az emulálás erőforrásigénye nagy lehet, performanciában ronthat a guest OS-en</p>
+<p>VMWare ESX</p>
+
+<h3>Paravirtualization</h3>
+<p>„Részleges virtualizáció”</p>
+<p>A guest OS felé a fizikai gép hardware-éhez hasonló, de nem teljesen azonos interface-t
+mutat.</p>
+<p>Részben eliminálja az emulációval járó overhead-et</p>
+<p>A guest OS-nek ismernie kell a virtualizációs réteget</p>
+<p>Pl. Xen – ilyen technológiával volt implementálva</p>
+
+<h3>Hardware-segített virtualizáció</h3>
+<p>Hardware-es segítséggel történik a virtualizáció</p>
+<p>AMD Virtualization (AMD-V) támogatás x86 processzorokhoz<br/>
+Rendszeresen végrehajtott VM taszkok hatékonyabbá tétele<br/>
+AMD Opteron processzorokban</p>
+<p>Intel VT-x/VT-i x86/Itanium<br/>
+Új processzor mód: „root mode”</p>
+<p>Microsoft, VMware, Virtual Iron, Xen Source</p>
