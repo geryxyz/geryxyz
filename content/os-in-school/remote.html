@@ -7,7 +7,15 @@ layout: course
 <p>1. hálózati kártya: NAT</p> 
 <p>2. hálózati kártya: Host-only hálózat<br/>
 <code>ifconfig -a</code>
-<code>vim /etc/netplan</code></p>
+<code>vim /etc/netplan</code>
+<code>network:
+    ethernets:
+        enp0s3:
+            dhcp4: true
+        enp0s8:
+            dhcp4: true
+    version: 2</code>
+<code>netplan apply</code></p>
 
 
 <h2>SSH/SCP</h2>
