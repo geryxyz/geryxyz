@@ -1,0 +1,52 @@
+---
+layout: course
+---
+<h1>VirtualBox hálózat beállítások</h1>
+<p>Forrás: <a href="https://blogs.oracle.com/scoter/networking-in-virtualbox-v2">Oracle VM VirtualBox: Networking options and how-to manage them</a></p>
+
+<h2>Network Address Translation (NAT)</h2>
+<ul>
+<li>Guests sit on own private LAN</li>
+<li>VirtualBox acts as a DHCP Server</li>
+<li>VirtualBox NAT engine translates addresses</li>
+<li>Destination servers see traffic originating from VirtualBox host</li>
+<li>No configuration needed on Host or Guest</li>
+<li>Great when guests are clients</li>
+<li>Not good for guests as servers</li>
+</ul>
+
+<h2>Bridged Networking</h2>
+<ul>
+<li>VirtualBox bridges to Host Network</li>
+<li>Good for clients or server guests</li>
+<li>Consumes IP addresses</li>
+<li>May involve configuration of guest</li>
+<li>Best for production environments</li>
+</ul>
+
+<h2>Internal Networking</h2>
+<ul>
+<li>Guests can see other guests on same internal network</li>
+<li>Host cannot see internal network</li>
+<li>Network configuration needed</li>
+<li>Functions even when Host disconnected</li>
+<li>Can be used in conjunction with Bridged</li>
+<li>Good for multi-tier solutions</li>
+</ul>
+
+<h2>Host-only Networking</h2>
+<ul>
+<li>VirtualBox creates a private internal network for guests and host</li>
+<li>Host sees a new software NIC</li>
+<li>VirtualBox provides a DHCP server</li>
+<li>Guests cannot see outside world</li>
+<li>Guests function even when host disconnected</li>
+<li>Great for development</li>
+</ul>
+
+<h2>Port-Forwarding with NAT Networking</h2>
+<ul>
+<li>Configure your vm's to use NAT networking;</li>
+<li>Add Port Forwarding rules;</li>
+<li>External machines connect to "host":"port number" and connections are forwarded by VirtualBox to the guest:port number specified.</li>
+</ul>
