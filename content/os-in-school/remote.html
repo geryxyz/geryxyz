@@ -6,16 +6,16 @@ layout: course
 <h2>Hálózat konfiguráció</h2>
 <p>1. hálózati kártya: NAT</p> 
 <p>2. hálózati kártya: Host-only hálózat<br/>
-<code>ifconfig -a</code>
-<code>vim /etc/netplan</code>
-<code>network:
+<pre class="code"><code>ifconfig -a</code></pre>
+<pre class="code"><code>vim /etc/netplan</code></pre>
+<pre class="code"><code>network:
     ethernets:
         enp0s3:
             dhcp4: true
         enp0s8:
             dhcp4: true
     version: 2</code>
-<code>netplan apply</code></p>
+<pre class="code"><code>netplan apply</code></pre></p>
 
 
 <h2>SSH/SCP</h2>
