@@ -26,10 +26,18 @@ layout: course
 <p><a href="https://winscp.net/eng/index.php">WinSCP</a></p>
 
 <h2>SFTP</h2>
-<p><a href="https://linuxconfig.org/how-to-setup-sftp-server-on-ubuntu-18-04-bionic-beaver-with-vsftpd">SFTP server telepítése</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QcKYFEgfV-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3>Hálózat konfiguráció</h3>
+<p>1. hálózati kártya: NAT</p> 
+<p>2. hálózati kártya: Belső hálózat<br/>
 <pre class="code"><code>vboxmanage dhcpserver add --netname intnet --ip 10.10.0.1 --netmask 255.255.0.0 --lowerip 10.10.10.1 --upperip 10.10.10.255 --enable</code></pre>
+
+<h3>Server</h3>
+<p><a href="https://linuxconfig.org/how-to-setup-sftp-server-on-ubuntu-18-04-bionic-beaver-with-vsftpd">SFTP server telepítése</a></p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lhOY-KilEeE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3>Kliens</h3>
+<pre class="code"><code>sudo apt install net-tools</code></pre>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QcKYFEgfV-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <h2>Samba</h2>
