@@ -41,3 +41,18 @@ layout: course
 <pre class="code"><code>sftp sftpuser@10.10.10.1</code></pre>
 
 <h2>Samba</h2>
+<p><a href="https://tutorials.ubuntu.com/tutorial/install-and-configure-samba#0">Install and Configure Samba</a></p>
+<p><pre class="code"><code>vim /etc/netplan</code></pre>
+<pre class="code"><code>network:
+    ethernets:
+        enp0s3:
+            dhcp4: true
+        enp0s8:
+            dhcp4: true
+        enp0s9:
+            dhcp4: true
+    version: 2</code></pre>
+<pre class="code"><code>netplan apply</code></pre></p>
+<p>Engedélyezzük a home share-t: <code>sudo vim /etc/samba/smb.conf</code></p>
+<p><pre class="code"><code>\\192.168.56.104\geryxyz</code></pre></p>
+
