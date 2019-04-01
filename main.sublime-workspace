@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"viru",
+				"Virtualizáció"
+			],
+			[
 				"re",
 				"requires\t(partition.html)"
 			],
@@ -510,51 +514,11 @@
 			[
 				"up",
 				"upload\t(gremlin_uploader.py)"
-			],
-			[
-				"j",
-				"json_graphs"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "content/os-in-school/university.html",
-			"settings":
-			{
-				"buffer_size": 1786,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "content/teaching.html",
-			"settings":
-			{
-				"buffer_size": 1466,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "content/os-in-school/history-of-os.html",
-			"settings":
-			{
-				"buffer_size": 2450,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "content/os-in-school/partition.html",
-			"settings":
-			{
-				"buffer_size": 3422,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -568,12 +532,12 @@
 		"selected_items":
 		[
 			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
 				"wr",
 				"Word Wrap: Toggle"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
 			],
 			[
 				"insta",
@@ -632,15 +596,23 @@
 	},
 	"expanded_folders":
 	[
-		"/F/project/geryxyz.github.io",
-		"/F/project/geryxyz.github.io/_includes",
-		"/F/project/geryxyz.github.io/content",
-		"/F/project/geryxyz.github.io/content/os-in-school",
-		"/F/project/geryxyz.github.io/files",
-		"/F/project/geryxyz.github.io/files/oprend"
+		"/H/project/geryxyz.github.io",
+		"/H/project/geryxyz.github.io/content",
+		"/H/project/geryxyz.github.io/content/os-in-school"
 	],
 	"file_history":
 	[
+		"/H/prg/Adobe Illustrator CC 2015 19.0.0 (64-Bit) + Crack/ReadMe.txt",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/H/project/geryxyz.github.io/content/os-in-school/virtualization.html",
+		"/H/project/geryxyz.github.io/content/os-in-school/university.html",
+		"/H/project/iFL/iFL4Eclipse-public/org.eclipse.sed.ifl.root/bundles/org.eclipse.sed.ifl.dependencies/pom.xml",
+		"/H/project/iFL/iFL4Eclipse-public/build.ps1",
+		"/H/project/iFL/iFL4Eclipse-public/org.eclipse.sed.ifl.root/releng/pom.xml",
+		"/H/project/iFL/iFL4Eclipse-public/org.eclipse.sed.ifl.root/pom.xml",
+		"/H/project/geryxyz.github.io/content/os-in-school/partition.html",
+		"/H/project/geryxyz.github.io/content/os-in-school/history-of-os.html",
+		"/H/project/geryxyz.github.io/content/teaching.html",
 		"/F/project/perr2019/main.txt",
 		"/F/project/iFL/iFL4Eclipse-public/README.md",
 		"/F/project/geryxyz.github.io/content/os-in-school/dfsetup222.zip",
@@ -757,22 +729,11 @@
 		"/F/project/crossminer/internal-material/Workpackages/WP6/D6.3/.gitignore",
 		"/F/project/crossminer/2Juri/crossmeter.json",
 		"/F/project/crossminer/2Juri/message.md",
-		"/F/project/jss/chain/chain-fl-regression/data/output/all_ratio.csv",
-		"/F/project/jss/chain/chain-fl-regression/data/output/all_ratio_multicorr.csv",
-		"/F/project/jss/chain/chain-fl-regression/data/output/all_ratio_relevancy.csv",
-		"/F/project/jss/chain/chain-fl-regression/data/output/all/ratio_multicollinearity_sig_high.tex",
-		"/F/project/jss/chain/chain-fl-regression/data/output/all/ratio_correlation_tarantula_abs_imp_sig_high.tex",
-		"/F/project/jss/chain/chain-fl-regression/data/output/all/ratio_correlation_ochiai_abs_imp_sig_high.tex",
-		"/F/project/jss/chain/chain-fl-regression/data/flex.csv",
-		"/F/project/jss/chain/chain-fl-regression/data/sed.csv",
-		"/Q/team/gyimi/gyimi-kut/Papers/chain-fl/data/commons-lang/commons-lang-stat.csv",
-		"/Q/team/gyimi/gyimi-kut/Papers/chain-fl/data/commons-lang/commons-lang.method.agg.1.csv",
-		"/Q/team/gyimi/gyimi-kut/Papers/chain-fl/data/commons-lang/commons-lang.agg.1.csv",
-		"/S/historical_package_changes/oryx.csv"
+		"/F/project/jss/chain/chain-fl-regression/data/output/all_ratio.csv"
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -786,6 +747,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" ",
 			"\u0003"
 		],
 		"highlight": true,
@@ -805,128 +767,14 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "content/os-in-school/university.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1786,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								861,
-								861
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "content/teaching.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1466,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								589,
-								589
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "content/os-in-school/history-of-os.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2450,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								657,
-								657
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "content/os-in-school/partition.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3422,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								764,
-								764
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 48.0
+		"height": 41.0
 	},
 	"input":
 	{
@@ -967,7 +815,7 @@
 	"project": "main.sublime-project",
 	"replace":
 	{
-		"height": 88.0
+		"height": 78.0
 	},
 	"save_all_on_build": true,
 	"select_file":
