@@ -13,6 +13,9 @@ $route66: #424242;
 $steadygrey: #E9E9E9;
 $bc: #BCBCBC;
 
+$dayschool: #FACA66;
+$nightschool: #66324C;
+
 $MelonJuice: #F23800;
 
 body {
@@ -50,6 +53,18 @@ h2 {
 h3 {
 	margin-top: 2ex;
 	margin-bottom: .5ex;
+}
+
+h2.night, h3.night {
+	border-left: solid $nightschool 6pt;
+}
+
+h2.day, h3.day {
+	border-left: solid $dayschool 6pt;
+}
+
+h2.both, h3.both {
+	border-left: solid black 6pt;
 }
 
 div#main {
