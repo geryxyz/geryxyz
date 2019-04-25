@@ -65,6 +65,7 @@ h2.day, h3.day {
 	border-right: solid $dayschool 3pt;
 	padding-right: 9pt;
 	margin-bottom: 3pt;
+	background-image: linear-gradient(to right, rgba(0,0,0,0) , $dayschool);
 }
 
 h2.both, h3.both {
