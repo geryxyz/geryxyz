@@ -57,6 +57,7 @@ h3 {
 
 h2.night, h3.night {
 	border-right: solid $nightschool 3pt;
+	border-top: solid $nightschool .6pt;
 	padding-right: 9pt;
 	margin-bottom: 3pt;
 	width: 50%;
@@ -64,13 +65,7 @@ h2.night, h3.night {
 
 h2.day, h3.day {
 	border-right: solid $dayschool 3pt;
-	padding-right: 9pt;
-	margin-bottom: 3pt;
-	width: 50%;
-}
-
-h2.both, h3.both {
-	border-right: solid black 3pt;
+	border-top: solid $dayschool .6pt;
 	padding-right: 9pt;
 	margin-bottom: 3pt;
 	width: 50%;
