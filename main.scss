@@ -56,18 +56,21 @@ h3 {
 }
 
 h2.night, h3.night {
-	border-left: solid $nightschool 3pt;
-	padding-left: 9pt;
+	border-right: solid $nightschool 3pt;
+	padding-right: 9pt;
+	margin-bottom: 3pt;
 }
 
 h2.day, h3.day {
-	border-left: solid $dayschool 3pt;
-	padding-left: 9pt;
+	border-right: solid $dayschool 3pt;
+	padding-right: 9pt;
+	margin-bottom: 3pt;
 }
 
 h2.both, h3.both {
-	border-left: solid black 3pt;
-	padding-left: 9pt;
+	border-right: solid black 3pt;
+	padding-right: 9pt;
+	margin-bottom: 3pt;
 }
 
 div#main {
