@@ -50,3 +50,76 @@ layout: course
 <li>Add Port Forwarding rules;</li>
 <li>External machines connect to "host":"port number" and connections are forwarded by VirtualBox to the guest:port number specified.</li>
 </ul>
+
+<h2>Lehetséges kapcsolatok különböző módokban</h2>
+<table summary="Overview of Networking Modes" border="1"><colgroup><col align="left"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"></colgroup><thead valign="middle"><tr><th align="left"><span class="bold"><strong>Mode</strong></span></th><th align="center"><p>
+                <span class="bold"><strong>VM&#8594;Host</strong></span>
+              </p></th><th align="center"><p>
+                <span class="bold"><strong>VM&#8592;Host</strong></span>
+              </p></th><th align="center"><p>
+                <span class="bold"><strong>VM1&#8596;VM2</strong></span>
+              </p></th><th align="center"><p>
+                <span class="bold"><strong>VM&#8594;Net/LAN</strong></span>
+              </p></th><th align="center"><p>
+                <span class="bold"><strong>VM&#8592;Net/LAN</strong></span>
+              </p></th></tr></thead><tbody valign="middle"><tr><td align="left"><p>
+                Host-only
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td><td align="center"><p>
+                &#8211;
+              </p></td><td align="center"><p>
+                &#8211;
+              </p></td></tr><tr><td align="left"><p>
+                Internal
+              </p></td><td align="center"><p>
+                &#8211;
+              </p></td><td align="center"><p>
+                &#8211;
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td><td align="center"><p>
+                &#8211;
+              </p></td><td align="center"><p>
+                &#8211;
+              </p></td></tr><tr><td align="left"><p>
+                Bridged
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td></tr><tr><td align="left"><p>
+                NAT
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td><td align="center"><p>
+                <a href="ch06.html#natforward" title="6.3.1. Configuring Port Forwarding with NAT">Port forward</a>
+              </p></td><td align="center"><p>
+                &#8211;
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td><td align="center"><p>
+                <a href="ch06.html#natforward" title="6.3.1. Configuring Port Forwarding with NAT">Port forward</a>
+              </p></td></tr><tr><td align="left"><p>
+                NATservice
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td><td align="center"><p>
+                <a href="ch06.html#network_nat_service" title="6.4. Network Address Translation Service">Port forward</a>
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td><td align="center"><p>
+                <span class="bold"><strong>+</strong></span>
+              </p></td><td align="center"><p>
+                <a href="ch06.html#network_nat_service" title="6.4. Network Address Translation Service">Port forward</a>
+              </p></td></tr></tbody></table></div><p>
