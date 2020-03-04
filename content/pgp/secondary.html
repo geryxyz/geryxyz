@@ -117,19 +117,19 @@ if __name__ == '__main__':
   <li>Cypher szintaxis
   	<dl>
   		<dt>Keresés és minta illesztés</dt>
-  		<dd><pre class="code">MATCH (m:Movie)<-[:RATED]-(u:User)</pre></dd>
+  		<dd><code class="cypher">MATCH (m:Movie)<-[:RATED]-(u:User)</code></dd>
   		<dt>Keresés és minta illesztés</dt>
-  		<dd><pre class="code">MATCH (m:Movie)<-[:RATED]-(u:User)</pre></dd>
+  		<dd><code class="cypher">MATCH (m:Movie)<-[:RATED]-(u:User)</code></dd>
   		<dt>Szűrés feltétel alapján</dt>
-  		<dd><pre class="code">WHERE m.title CONTAINS "Matrix"</pre></dd>
+  		<dd><code class="cypher">WHERE m.title CONTAINS "Matrix"</code></dd>
   		<dt>Adatok átadása</dt>
-  		<dd><pre class="code">WITH m.title AS movie, COUNT(*) AS reviews</pre></dd>
+  		<dd><code class="cypher">WITH m.title AS movie, COUNT(*) AS reviews</code></dd>
   		<dt>Eredmények visszadása</dt>
-  		<dd><pre class="code">RETURN movie, reviews</pre></dd>
+  		<dd><code class="cypher">RETURN movie, reviews</code></dd>
   		<dt>Rendezés</dt>
-  		<dd><pre class="code">ORDER BY reviews DESC</pre></dd>
+  		<dd><code class="cypher">ORDER BY reviews DESC</code></dd>
   		<dt>Limitálás</dt>
-  		<dd><pre class="code">LIMIT 5</pre></dd>
+  		<dd><code class="cypher">LIMIT 5</code></dd>
   	</dl>
     <ul>
       <li><details><summary>Komplex példa</summary><pre class="code">
