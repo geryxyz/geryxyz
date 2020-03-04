@@ -25,7 +25,7 @@ easy_install neo4j-driver
 </ul>
 
 <h2>Mi az a szkript nyelv?</h2>
-<p>Python alapok: parancssoron keresztül néhány példa</p>
+<p>Python alapok: parancssoron keresztül néhány példa a szintaxisról</p>
 <p>Eddig elkészült <a href="https://drive.google.com/open?id=1IyTVRu1tDzsGkWwZYpRS65z-izCJq7uC">program</a></p>
 
 <h2>Szépen formázott kiiratás és beolvasás</h2>
@@ -112,12 +112,28 @@ if __name__ == '__main__':
 </ul>
 
 <h2>Bevezetés a gráf adatbázisok világába</h2>
-<p class="overview">Neo4J gráf adatbázis szerkezete és a <a href="https://neo4j.com/developer/cypher-query-language/">Cypher lekérdező nyelv</a>. Üres adatbázis létrehozása és feltöltése egy <a href="https://neo4j.com/sandbox-v2/">példa adatbázison</a> keresztül.</p>
+<p class="overview">Neo4J gráf adatbázis szerkezete és a <a href="https://neo4j.com/developer/cypher-query-language/">Cypher lekérdező nyelv</a>.
 <ul>
   <li>Neo4J gráf modell</li>
   <li>Cypher szintaxis
+  	<dl>
+  		<dt>Keresés és minta illesztés</dt>
+  		<dd><pre class="code">MATCH (m:Movie)<-[:RATED]-(u:User)</pre></dd>
+  		<dt>Keresés és minta illesztés</dt>
+  		<dd><pre class="code">MATCH (m:Movie)<-[:RATED]-(u:User)</pre></dd>
+  		<dt>Szűrés feltétel alapján</dt>
+  		<dd><pre class="code">WHERE m.title CONTAINS "Matrix"</pre></dd>
+  		<dt>Adatok átadása</dt>
+  		<dd><pre class="code">WITH m.title AS movie, COUNT(*) AS reviews</pre></dd>
+  		<dt>Eredmények visszadása</dt>
+  		<dd><pre class="code">RETURN movie, reviews</pre></dd>
+  		<dt>Rendezés</dt>
+  		<dd><pre class="code">ORDER BY reviews DESC</pre></dd>
+  		<dt>Limitálás</dt>
+  		<dd><pre class="code">LIMIT 5</pre></dd>
+  	</dl>
     <ul>
-      <li><details><summary>Példa</summary><pre class="code">
+      <li><details><summary>Komplex példa</summary><pre class="code">
 MATCH (m:Movie)<-[:RATED]-(u:User) <span class="comment">//Search for an existing graph pattern</span>
 WHERE m.title CONTAINS "Matrix" <span class="comment">//Filter matching paths to only those matching a predicate</span>
 WITH m.title AS movie, COUNT(*) AS reviews <span class="comment">//Count number of paths matched for each movie</span>
@@ -182,7 +198,7 @@ return other.title as recommendation, count(user) as similarity, liked.title as 
 order by similarity desc limit 10
 </pre>
 
-<h3>Hasonló műfajú filmek keresése</h3>
+<h2>Műfaj alapú filmajánló program készítése Python-ban</h2>
 
 <p>Milyen műfajokba sorolták be az Inception-t?</p>
 
@@ -228,7 +244,7 @@ def get_genre_of(title):
 
 <img src="/content/pgp/paramter-python-cyper.png"/>
 
-<p>halmazelméleti alapok</p>
+<h2>Halmazelméleti alapok</h2>
 
 <p>Közös műfajok megkeresése</p>
 
@@ -248,7 +264,7 @@ match (other)-[:IN_GENRE]->(otherGenre:Genre)
 return liked.title as liked, other.title as other, likedGenres, intersection, collect(otherGenre.name) as otherGenres
 </pre>
 
-<p>Refactoring - egyszerűsítsük a kódot</p>
+<h2>Refactoring - egyszerűsítsük a kódot</h2>
 
 <pre class="code"><code class="python">
 def getAll(query, property, parameters={}):
@@ -275,7 +291,7 @@ def get_genre_of(title):
   return getAll(query, 'name', parameters={'title': title})
 </code></pre>
 
-<p>Hasonlóság kiszámítása</p>
+<h2>Hasonlóság kiszámítása</h2>
 
 <p><a href="https://en.wikipedia.org/wiki/Jaccard_index">Jaccard-féle hasonlóság</a> fogalma és kiszámítása</p>
 
@@ -319,7 +335,7 @@ def jaccard():
   return similarMovies
 </code></pre>
 
-<p>Optimalizálás - gyorsítsuk fel a kódot</p>
+<h2>Optimalizálás - gyorsítsuk fel a kódot</h2>
 
 <pre class="code"><code class="python">
 def jaccard_slow():
@@ -362,7 +378,7 @@ def jaccard():
   return similarMovies
 </code></pre>
 
-<p>Melyik hasonló műfajú filmet nézzem meg?</p>
+<h2>Melyik hasonló műfajú filmet nézzem meg?</h2>
 
 <pre class="code">
 match (liked:Movie {title: "Inception"})-[:IN_GENRE]->(genre:Genre)<-[:IN_GENRE]-(other:Movie)
