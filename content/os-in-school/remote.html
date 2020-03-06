@@ -16,7 +16,7 @@ layout: course
             dhcp4: true
     version: 2</code></pre>
 <pre class="code"><code>netplan apply</code></pre></p>
-
+<p>Ha szükséges: <a href="https://www.cyberciti.biz/faq/ubuntu-renew-dhcp/">Ubuntu Linux Renew DHCP</a></p>
 
 <h2>SSH/SCP</h2>
 <p><a href="https://www.openssh.com/manual.html">OpenSSH server</a><br/>
@@ -24,12 +24,15 @@ layout: course
 <p><a href="https://www.putty.org/">PuTTY kliens</a></p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EBvxbuhDKBw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p><a href="https://winscp.net/eng/index.php">WinSCP</a></p>
+<p><a href="https://man.openbsd.org/sshd#t">sshd test mode</a></p
 
 <h2>SFTP</h2>
 <h3>Hálózat konfiguráció</h3>
 <p>1. hálózati kártya: NAT</p> 
 <p>2. hálózati kártya: Belső hálózat<br/>
-<pre class="code"><code>vboxmanage dhcpserver add --netname intnet --ip 10.10.0.1 --netmask 255.255.0.0 --lowerip 10.10.10.1 --upperip 10.10.10.255 --enable</code></pre>
+<pre class="code"><code>.\vboxmanage.exe dhcpserver add --netname intnet --ip 10.10.0.1 --netmask 255.255.0.0 --lowerip 10.10.10.1 --upperip 10.10.10.255 --enable</code></pre>
+<p>The <a href="https://www.virtualbox.org/manual/ch08.html#vboxmanage-dhcpserver">dhcpserver commands</a> enable you to control the DHCP server that is built into VirtualBox.</p>
+
 
 <h3>Server</h3>
 <p><a href="https://linuxconfig.org/how-to-setup-sftp-server-on-ubuntu-18-04-bionic-beaver-with-vsftpd">SFTP server telepítése</a></p>
