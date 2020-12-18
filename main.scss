@@ -18,6 +18,9 @@ $nightschool: #66324C;
 
 $MelonJuice: #F23800;
 
+/*font-family: 'Jaldi', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@700&display=swap');
+
 body {
 	margin: 0;
 }
@@ -37,14 +40,16 @@ canvas {
 h1, h2, h3, h4, h5 {
 	margin: 0;
 	margin-top: 1ex;
+	margin-bottom: .1ex;
 	padding: 0;
+	font-family: 'Jaldi', sans-serif;
 }
 
 h1 {
 	font-weight: bold;
 	font-style: normal;
 	font-size: 28.8pt;
-	margin: 0pt;
+	margin-top: 0pt;
 }
 
 h2 {
@@ -62,7 +67,7 @@ h3 {
 h4 {
 	font-weight: bold;
 	font-style: italic;
-	font-size: 17.8pt
+	font-size: 14pt
 }
 
 h5 {
@@ -146,13 +151,25 @@ div#menu-container li a {
 	padding: 1pt 5pt;
 }
 
+div.project {
+	display: inline-block;
+	text-align: center;
+	margin: 10pt;
+}
+
 img.ico {
 	float: left;
-	height: 30ex;
+	height: 35ex;
 	border: solid $bc 1pt;
 	margin: 0;
 	margin-right: 10pt;
 	padding: 0;
+}
+
+img.logo {
+	display: inline;
+	height: 15ex;
+	border: none;
 }
 
 p.audience {
@@ -170,6 +187,11 @@ p.motto {
 	border: solid 1pt $bc;
 	color: $steadygrey;
 	background: $route66;
+	border-radius: 3pt;
+}
+
+p.center {
+	text-align: center;
 }
 
 span.emph {
