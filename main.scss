@@ -36,23 +36,39 @@ canvas {
 
 h1, h2, h3, h4, h5 {
 	margin: 0;
+	margin-top: 1ex;
 	padding: 0;
 }
 
 h1 {
 	font-weight: bold;
-	font-size: 24pt;
+	font-style: normal;
+	font-size: 28.8pt;
+	margin: 0pt;
 }
 
 h2 {
-	font-weight: normal;
-	font-style: normal;
-	padding-bottom: 10pt;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 28.8pt;
 }
 
 h3 {
-	margin-top: 2ex;
-	margin-bottom: .5ex;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 17.8pt;
+}
+
+h4 {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 17.8pt
+}
+
+h5 {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 11pt;
 }
 
 h2.night, h3.night {
@@ -147,9 +163,24 @@ p.goal {
 	font-weight: bold;
 }
 
+p.motto {
+	font-weight: bold;
+	padding: 5pt;
+	width: 66%;
+	border: solid 1pt $bc;
+	color: $steadygrey;
+	background: $route66;
+}
+
 span.emph {
 	font-family: 'PT Serif', serif;
 	font-style: italic;
+}
+
+span.strong {
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
 }
 
 span.quote {
