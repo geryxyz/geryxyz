@@ -1,0 +1,37 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+span.quote {
+  font-style: italic;
+  font-family: serif;
+}
+
+span.emph {
+  font-style: italic;
+}
+
+img.ico {
+  display: block;
+  margin: 1ex auto;
+  width: 66%;
+}
+
+img.logo {
+  display: block;
+  margin: 1ex auto;
+  width: 66%;
+}
+
+div.project {
+  display: inline-block;
+  margin: 1ex auto;
+  width: 32%;
+  text-align: center;
+  font-size: small;
+}
