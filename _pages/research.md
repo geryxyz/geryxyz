@@ -5,11 +5,21 @@ permalink: /research
 <p class="quote motto">“Every little increase in human freedom has been fought over ferociously between those who want us to know more and be wiser and stronger, and those who want us to obey and be humble and submit.”<br/><span class="emph">― Philip Pullman, The Subtle Knife</span></p>
 
 ## Personal Information
+<table>
+    <tr>
+        <th>Job</th>
+        <td>Researcher at University of Szeged,<br/>Department of Software Engineering</td>
+    </tr>
+    <tr>
+        <th>Workplace</th>
+        <td>Department of Software Engineering<br/>Dugonics square 13., Szeged 6720, Hungary</td>
+    </tr>
+</table>
 <p>
-    <span class="emph">Researcher at University of Szeged, Department of Software Engineering</span><br/>
-    <span class="emph">Workplace: </span>Department of Software Engineering (Dugonics square 13., Szeged 6720, Hungary<br/>
-    <span class="emph">E-mail: </span><a href="mailto:geryxyz@inf.u-szeged.hu">geryxyz@inf.u-szeged.hu</a><br/>
-<p><a href="https://github.com/geryxyz">GitHub profile</a> <a href="https://scholar.google.com/citations?user=Xh0bbbQAAAAJ&hl=hu">Google Scholar profile</a> <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10055619">"Magyar Tudományos Művek Tára" profile</a> <a href="https://www.scopus.com/authid/detail.uri?authorId=55975863300">Scopus profile</a></p>
+    <a href="https://github.com/geryxyz"><i class="fab fa-github"></i></a>
+    <a href="https://scholar.google.com/citations?user=Xh0bbbQAAAAJ&hl=hu"><i class="fas fa-graduation-cap"></i></a>
+    <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10055619"><i class="fas fa-book"></i></a>
+    <a href="https://www.scopus.com/authid/detail.uri?authorId=55975863300"><i class="fab fa-pagelines"></i></a>
 </p>
 
 ## Topics of Interest

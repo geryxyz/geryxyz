@@ -35,3 +35,16 @@ div.project {
   text-align: center;
   font-size: small;
 }
+
+p.audience {
+  font-variant: small-caps;
+}
+
+p.abstract {
+  font-weight: bold;
+  font-style: italic;
+  border: $text-color .66pt solid;
+  padding: 1ex;
+  border-radius: 1ex;
+  text-align: justify;
+}
