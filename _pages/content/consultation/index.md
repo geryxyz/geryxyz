@@ -34,6 +34,8 @@ Még nem kidolgozott problémák melyek általában zöldmezős projektként val
 
 ### Wan Shi Tong
 
+**Nem tudok több hallgatót vállalni**
+
 Cél egy Python alapú webes referencia gyűjtemény kezelő rendszer létrehozása. Ez egy zöld mező projekt. Biber, LaTeX és git biztos hogy elég jelentős szerepet játszik majd benne.
 
 A tudományos cikkek hivatkozásait BiBTeX fájlokban tároljuk és Git verziókövető rendszerben kezeljük.
@@ -46,7 +48,8 @@ Az alkalmazást fel kell készíteni a későbbi responsive webes felület bevez
 
 | Név | Elvállalta | Közös munka |
 |--|--|--|
-|Adonics Nikolett|<i class="far fa-question-circle"></i>|<i class="far fa-question-circle"></i>|
+|Adonics Nikolett|<i class="far fa-check-circle"></i>|<i class="far fa-check-circle"></i>|
+|Juhász Norbert|<i class="far fa-check-circle"></i>|<i class="far fa-check-circle"></i>|
 
 #### Referenciák olvasása és keresése
 
@@ -67,7 +70,7 @@ Idő hiányában nincs aktív fejlesztés alatt. Biber (BibLaTeX), LaTeX és Git
 
 | Név | Elvállalta | Közös munka |
 |--|--|--|
-|Székely Norbert|<i class="far fa-check-circle"></i>|<i class="far fa-question-circle"></i>|
+|Székely Norbert|<i class="far fa-check-circle"></i>|<i class="far fa-check-circle"></i> *amennyiben a szabálysértések felismerésének megvalósítása mind a két altéma része, ezzel csökkentve a függőséget*|
 
 #### Forráskód és egyéb szabálysértések jelzése
 
@@ -76,6 +79,14 @@ Idő hiányában nincs aktív fejlesztés alatt. Biber (BibLaTeX), LaTeX és Git
 #### Szabálysértések halmazának bővítése
 
 **Ez az altéma jelenleg nem választható**
+
+## Saját témák
+
+**Hallgatók**
+
+| Név | Elvállalta |
+|--|--|
+|Kószó Patrick|<i class="far fa-question-circle"></i>|
 
 ## Korábbi témák
 
@@ -89,9 +100,9 @@ Jelenleg stabil verzióval rendelkezik, ezért első körben tesztelés és karb
 
 **Hallgatók**
 
-| Név | Elvállalta | Közös munka |
-|--|--|--|
-|Bányai Zoltán|<i class="far fa-question-circle"></i>|<i class="far fa-question-circle"></i>| 
+| Név | Elvállalta |
+|--|--|
+|Bányai Zoltán|<i class="far fa-check-circle"></i>| 
 
 ### iFL4Eclipse
 
