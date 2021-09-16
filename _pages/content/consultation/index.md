@@ -42,6 +42,8 @@ Feladat a közvetlen támogatás biztosítása egy új webes rendszeren kereszt�
 A könnyebb elérés érdekében legalább a Google Chrome böngészőt támogatni kell.
 Az alkalmazást fel kell készíteni a későbbi responsive webes felület bevezetésére.
 
+<a href="https://github.com/geryxyz/WanShiTong"><i class="fab fa-github-square"></i> Projekt forráskód</a>
+
 **Hallgatók**
 
 | Név | Elvállalta | Közös munka |
@@ -58,10 +60,14 @@ Az alkalmazást fel kell készíteni a későbbi responsive webes felület bevez
 
 ### bibHygeia Bibtex Toolkit
 
+<img class="logo" style="width: 33%" src="https://github.com/geryxyz/bibHygeia/raw/dev/media/bibHygeia.png"/>
+
 Egy Python alapú referencia gyűjtemény kezelő és karbantartó rendszer, mely a BiBTeX fájlok forráskódszintű kezelését végzi.
 Jelenleg egy parancssori program csomag, mely képes gyakori műveletek autómatizálására.
 A projekt célja, hogy Continuous Integration rendszerben segítse a BiBTeX fájlok karbantartását.
 Idő hiányában nincs aktív fejlesztés alatt. Biber (BibLaTeX), LaTeX és Git biztos, hogy jelentős szerepet játszik majd.
+
+<a href="https://github.com/geryxyz/bibHygeia"><i class="fab fa-github-square"></i> Projekt forráskód</a>
 
 **Hallgatók**
 
@@ -83,9 +89,13 @@ Korábbi években megoldott problémák. Bizonyos esetben továbbfejlesztési le
 
 ### CodeMetropolis
 
+<img class="logo" style="width: 33%" src="/assets/images/logos/codemetropolis.png"/>
+
 **Jelenleg csak egy hallgató vállalhatja el.**  
 Egy Minecraft alapú forrás kód vizuálizaciós parancssori program. Tisztán Java nyelven készült.
 Jelenleg stabil verzióval rendelkezik, ezért első körben tesztelés és karbantartással kapcsolatos munkát jelent.
+
+<a href="http://codemetropolis.github.io/CodeMetropolis/"><i class="fas fa-external-link-alt"></i> Official page</a>
 
 **Hallgatók**
 
@@ -95,14 +105,20 @@ Jelenleg stabil verzióval rendelkezik, ezért első körben tesztelés és karb
 
 ### iFL4Eclipse
 
+<img class="logo" style="width: 33%" src="/assets/images/logos/iFL4Eclipse.png"/>
+
 **Nem tudok több hallgatót vállalni**  
 Egy Java alapú Eclipse plug-in. Jelenleg stabil verzióval rendelkezik, továbbfejlesztéssel kapcsolatos feladatokra kell számítani
+
+<a href="https://github.com/sed-szeged/iFL4Eclipse"><i class="fas fa-external-link-alt"></i> Official page</a>
 
 ### CROSSMINER
 
 **Nem tudok több hallgatót vállalni**  
 It enables the monitoring, in-depth analysis and evidence-based selection of open source components,
 and facilitates knowledge extraction from large open-source software repositories.
+
+<a href="https://www.crossminer.org/"><i class="fas fa-external-link-alt"></i> Official page</a>
 
 ## Tudományos kutatás
 
