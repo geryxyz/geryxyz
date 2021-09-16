@@ -53,8 +53,8 @@ permalink: /teaching
 ## Consulting hours - Fogadó órák
 <p>
     Wednesday - szerda, 9:00-10:30<br/>
-    Department of Software Engineering (Dugonics tér 13.) Office 148<br/>
-    Szoftverfejlesztés tanszék (Dugonics tér 13.) 148-as iroda
+    Department of Software Engineering (Dugonics tér 13.) Office 145<br/>
+    Szoftverfejlesztés tanszék (Dugonics tér 13.) 145-as iroda
 </p>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.2584513159911!2d20.145744620906733!3d46.250037643385134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47448871b6abb4a7%3A0x257aa9635ae4dc8!2sDepartment%20of%20Rector&#39;s%20Office!5e0!3m2!1sen!2shu!4v1630939351479!5m2!1sen!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
