@@ -71,7 +71,6 @@ Idő hiányában nincs aktív fejlesztés alatt. Biber (BibLaTeX), LaTeX és Git
 | Név | Elvállalta | Közös munka |
 |--|--|--|
 |Székely Norbert|<i class="far fa-check-circle"></i>|<i class="far fa-check-circle"></i> *amennyiben a szabálysértések felismerésének megvalósítása mind a két altéma része, ezzel csökkentve a függőséget*|
-|Molnár Zoltán|<i class="far fa-question-circle"></i>|<i class="far fa-check-circle"></i>|
 
 #### Forráskód és egyéb szabálysértések jelzése
 
