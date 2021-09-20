@@ -88,11 +88,15 @@ Idő hiányában nincs aktív fejlesztés alatt. Biber (BibLaTeX), LaTeX és Git
 
 ## Saját témák
 
+### Veszélyzóna
+
+Kétszemélyes, táblás, körökre osztott, elvont társosjáték.
+
 **Hallgatók**
 
 | Név | Elvállalta |
 |--|--|
-|Kószó Patrick|<i class="far fa-question-circle"></i>|
+|Kószó Patrick|<i class="far fa-check-circle"></i>|
 
 ## Korábbi témák
 
