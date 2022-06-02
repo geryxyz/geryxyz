@@ -50,6 +50,12 @@ permalink: /teaching
     </p>
 </details>
 
+## Summary of Past Teaching Experiences - Tanítási tapasztalatok összefoglalása
+
+<p>
+    <i class="fas fa-brain"></i> <a href="/teaching/experience" target="_self">Summary</a>
+</p>
+
 ## Consulting hours - Fogadó órák
 <p>
     Wednesday - szerda, 9:00-10:30<br/>
@@ -63,17 +69,7 @@ permalink: /teaching
 
 ### Rendszerfejlesztés 2. gyakorlat
 <p>
-    <i class="fas fa-external-link-alt"></i> <a href="https://okt.sed.hu/rf2/gyakorlat/kovetelmenyek/" target="_self">Ütemterv és tananyag</a>
-</p>
-
-### Szkriptnyelvek gyakorlat
-<p>
-    <i class="fas fa-external-link-alt"></i> <a href="https://okt.sed.hu/szkriptnyelvek/gyakorlat/kovetelmenyek/" target="_self">Ütemterv és tananyag</a>
-</p>
-
-### Operációs rendszerek az iskolában
-<p>
-    <i class="fas fa-external-link-alt"></i> <a href="https://okt.sed.hu/os-in-school/kovetelmenyek/" target="_self">Ütemterv és tananyag</a>
+    <i class="fas fa-external-link-alt"></i> <a href="https://okt.sed.hu/rf2" target="_self">A kurzus hivatalos oldala</a>
 </p>
 
 ## Szakdolgozat és Diplomamunka vezetés
@@ -85,19 +81,19 @@ Vállalok szakdolgozat és diplomamunka vezetést. Az egyes témákról és a r�
 ### Cikk-Cakk Katica Szakkör
 <table>
     <tr>
-        <td><i class="fas fa-baby"></i></td><td><a href="/_pages/content/cck/primary5_6" target="_self">általános iskola 5.-6. osztályosok számára</a></td>
+        <td><i class="fas fa-baby"></i></td><td><a href="/_pages/content/teaching/cck/primary5_6" target="_self">általános iskola 5.-6. osztályosok számára</a></td>
     </tr>
     <tr>
-        <td><i class="fas fa-child"></i></td><td><a href="/_pages/content/cck/primary7_8" target="_self">általános iskola 7.-8. osztályosok számára</a></td>
+        <td><i class="fas fa-child"></i></td><td><a href="/_pages/content/teaching/cck/primary7_8" target="_self">általános iskola 7.-8. osztályosok számára</a></td>
     </tr>
     <tr>
-        <td><i class="fas fa-chalkboard-teacher"></i></td><td><a href="/_pages/content/cck/secondary" target="_self">középiskolások számára</a></td>
+        <td><i class="fas fa-chalkboard-teacher"></i></td><td><a href="/_pages/content/teaching/cck/secondary" target="_self">középiskolások számára</a></td>
     </tr>
 </table>
 
 ### PGP - Python, Gráfok, Programozás
 <table>
     <tr>
-        <td><i class="fas fa-chalkboard-teacher"></i></td><td><a href="/_pages/content/pgp/secondary" target="_self">középiskolások számára</a></td>
+        <td><i class="fas fa-chalkboard-teacher"></i></td><td><a href="/_pages/content/teaching/pgp/secondary" target="_self">középiskolások számára</a></td>
     </tr>
 </table>
