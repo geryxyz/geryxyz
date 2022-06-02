@@ -48,3 +48,27 @@ p.abstract {
   border-radius: 1ex;
   text-align: justify;
 }
+
+//https://www.colourlovers.com/palette/56122/Sweet_Lolly
+$Sweet_Lolly__sofft_reddy_pink: #FF003C;
+
+//https://www.colourlovers.com/palette/126030/Cruel_Water_at_Night
+$Cruel_Water_at_Night__Deep_Ink: #030C22;
+$Cruel_Water_at_Night__Dusty_Blue_Highlight: #A9B0B3;
+
+$stroke_width: 2pt;
+
+circle.node {
+  stroke: $Cruel_Water_at_Night__Deep_Ink;
+  stroke-width: $stroke_width;
+  fill: $Sweet_Lolly__sofft_reddy_pink;
+}
+
+line.edge {
+  stroke: $Cruel_Water_at_Night__Deep_Ink;
+  stroke-width: $stroke_width;
+}
+
+svg {
+  border: $stroke_width solid $Cruel_Water_at_Night__Dusty_Blue_Highlight;
+}
