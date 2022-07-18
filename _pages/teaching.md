@@ -74,7 +74,7 @@ permalink: /teaching
 
 ## Szakdolgozat és Diplomamunka vezetés
 
-Vállalok szakdolgozat és diplomamunka vezetést. Az egyes témákról és a részletekről az alábbi <a href="/_pages/content/consultation">oldalon</a> található információ.
+Vállalok szakdolgozat és diplomamunka vezetést. Az egyes témákról és a részletekről az alábbi <a href="/_pages/content/teaching/consultation">oldalon</a> található információ.
 
 ## Szakkörök és egyéb foglalkozások
 
