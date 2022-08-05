@@ -7,6 +7,10 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+p {
+  text-align: justify;
+}
+
 span.quote {
   font-style: italic;
   font-family: serif;
@@ -14,6 +18,11 @@ span.quote {
 
 span.emph {
   font-style: italic;
+}
+
+p.author {
+  font-style: italic;
+  color: dimgray;
 }
 
 img.ico {
@@ -33,7 +42,7 @@ div.project {
   margin: 1ex auto;
   width: 32%;
   text-align: center;
-  font-size: small;
+  vertical-align: middle;
 }
 
 p.audience {
@@ -47,6 +56,15 @@ p.abstract {
   padding: 1ex;
   border-radius: 1ex;
   text-align: justify;
+}
+
+a.anchor {
+  color: lightgray;
+  font-size: smaller;
+}
+
+a.anchor:hover {
+  color: black;
 }
 
 //https://www.colourlovers.com/palette/56122/Sweet_Lolly

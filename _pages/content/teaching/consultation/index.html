@@ -1,0 +1,207 @@
+---
+title: Szakdolgozat és Diplomamunka vezetés
+toc: false
+---
+
+<h2>Témák</h2>
+
+<p>
+    Az általam vezetett témák mindegyike kötődik a szoftverfejlesztéshez. Ez a gyakorlatban azt jelenti, hogy valamilyen szoftver készül el a hallgató munkája során, vagy már meglévő rendszer kerül továbbfejlesztésre. Létező rendszer esetén az elvégzett munka célja lehet akár funkcionális vagy nem-funkcionális bővítés, javítás. A témák kidolgozása során mindenképp sor kerül kódolásra is.
+</p>
+<p>A választható témák több forrásból származhatnak.</p>
+<ul>
+    <li>általam javasolt témák</li>
+    <li>hallgató által javasolt témák</li>
+    <li>munkahelyhez kapcsolódó témák</li>
+</ul>
+<p>Mindegyik esetben lehetőség van az alábbiakkal kapcsolatos témát választani.</p>
+<ul>
+    <li>ipari projekt</li>
+    <li>tudományos kutatás</li>
+</ul>
+<p>A szakterületemet és a korábbi munkatapasztalataimat is figyelembe véve az alábbi technológiákkal kapcsolatban tudok vállalni témavezetést.</p>
+<ul>
+    <li>Python parancssori és hálózati alkalmazások</li>
+    <li>Java desktop és parancssori alkalmazások</li>
+    <li>C# desktop (WPF) és parancssori alkalmazások</li>
+</ul>
+<p>
+    A választott vagy javasolt téma kidolgozása mindig egy jól meghatározható és lehetőleg eddig nem kiaknázott problémát oldjon meg. Ha már létezik hasonló megvalósítás úgy a hallgatónak minden esetben ki kell értékelnie a saját és a korábbi megoldások közötti különbségeket.
+</p>
+
+<h2>Tudományos kutatás</h2>
+
+<p>A tudományos munka iránt érdeklődő hallgatók figyelmébe ajánlom a kutatással kapcsolatos <a href="/research">aloldalt</a>.</p>
+
+<h2>Technikai részletek</h2>
+
+<h3>Közös munka</h3>
+
+<p>Bizonyos esetekben lehetőség van az egyes témák további altémákra bontani. Ilyenkor több hallgató is dolgozhat ugyanazon a témán,
+    azonban a közös munkába mindenkinek bele kell egyeznie. Az altémák meghatározása során fokozott figyelmet fordítottam arra,
+    hogy csökkentsem az egymástól való függést. Emellett a közös munka számos előnnyel járhat,
+    hiszen a felmerülő problémákat a másik hallgató szemszögéből is meg lehet vizsgálni.</p>
+
+<h3>Megbeszélések</h3>
+
+<p>Lehetőség szerint előnyben részesítem a személyes 1-2 heti konzultációkat. Az első megbeszélés során mindenképp szeretném látni a hallgatót,
+    még akkor is ha ez online történik.</p>
+<p>A konzultációkat témától függetlenül egy közös alkalom keretében tervezem tartani, mivel sok olyan általános elv létezik mely mindegyik témát érinti. Természetesen az egyénileg felmerülő problémák megbeszélésére is lesz lehetőség, amellett hogy így tanulhatunk egymás kérdéseiből és hibáiból is.</p>
+
+<h3>Adminisztráció</h3>
+
+<p>A jelentkezéshez és a tárgyfelvételhez kapcsolatos adminisztrációs ügyek intézése a hallgató feladata, melyhez természetesen segítségget nyújtok.
+    Az aktuális, egyetemi jogszabályok megismerése minden hallgató kötelessége.</p>
+
+<h3>Helyesírás</h3>
+
+<p>Önkritikát gyakorolva a dolgozatok nyelvhelyességének ellenőrzését a hallgatóra bízom.</p>
+
+<h3>Kommunikáció</h3>
+
+<p>Az elsődleges kommunikáció a személyes / élőszavas konzultációs alkalmak. Másodlagos a levelezés és Skype.
+    A levelek tárgyában mindenképp szerepeljen a <code>szakdolgozat</code> vagy a <code>diplomamunka</code> kifejezés.
+    Leveleket csak <code>@stud.u-szeged.hu</code> vagy <code>@inf.u-szeged.hu</code> domain-ről és csak a <code>geryxyz@inf.u-szeged.hu</code> címre küldve fogadok el.</p>
+<p>A félévek során folyamatos munkavégzést várok el. Ezért az elkészült részeket minél hamarabb el kell küldeni.
+    Egy adott rész átnézésének ideje természetesen sok mindentől függ, de átlagosan 1 hét szokott lenni.
+    A határidőhöz közeli, nagy-méretű módosítások esetleg nem kerülnek értékelés előtt átnézésre.
+    Bár iparkodom minél hamarabb válaszolni, kérem vegyük figyelembe, hogy a témavezetés a munkám része,
+    ezért általában munkaidőben foglalkozom vele: hétköznap 8-16 óra között.</p>
+
+<h2>Projektek</h2>
+
+Az alábbi lista azokat a szoftver rendszereket tartalmazza, melyekhez kapcsolódóan különböző dolgozat témák alakíthatóak ki. A hallgatóknak választhatnak a szabad témák közül, módosíthatják azokat, de új témákat is javasolhatnak.
+
+{% for project in site.data.consultation.theses.projects %}
+    <div class="project" id="{{ project.name | url_encode }}">
+        <img alt="{{ project.name }}" src="{{ project.logo }}"/>
+        <a href="{{ project.site }}">{{ project.name }}</a>
+    </div>
+{% endfor %}
+
+{% assign theses_by_date = site.data.consultation.theses.theses | sort_natural: "year_of_publish" %}
+
+<h2>Folyamatban lévő dolgozatok</h2>
+
+{% for thesis in theses_by_date %}
+    {% if thesis.state == "in progress" %}
+        {% include thesis.liquid thesis=thesis %}
+    {% endif %}
+{% endfor %}
+
+<h2>Elkészült dolgozatok</h2>
+
+{% for thesis in theses_by_date %}
+    {% if thesis.state == "finished" %}
+        {% include thesis.liquid thesis=thesis %}
+    {% endif %}
+{% endfor %}
+
+<!--
+## Aktív témák
+
+Még nem kidolgozott problémák melyek általában zöldmezős projektként valósíthatóak meg.
+
+### Wan Shi Tong
+
+**Nem tudok több hallgatót vállalni**
+
+Cél egy Python alapú webes referencia gyűjtemény kezelő rendszer létrehozása. Ez egy zöld mező projekt. Biber, LaTeX és git biztos hogy elég jelentős szerepet játszik majd benne.
+
+A tudományos cikkek hivatkozásait BiBTeX fájlokban tároljuk és Git verziókövető rendszerben kezeljük.
+Sajnos a jelenleg elérhető referencia menedzselő rendszerek csak közvetett (export és import) támogatást adnak, pl. [Mendeley](https://www.mendeley.com/reference-manager/library/all-references).
+Feladat a közvetlen támogatás biztosítása egy új webes rendszeren keresztül.
+A könnyebb elérés érdekében legalább a Google Chrome böngészőt támogatni kell.
+Az alkalmazást fel kell készíteni a későbbi responsive webes felület bevezetésére.
+
+<a href="https://github.com/geryxyz/WanShiTong"><i class="fab fa-github-square"></i> Projekt forráskód</a>
+
+**Hallgatók**
+
+| Név | Elvállalta | Közös munka |
+|--|--|--|
+|Adonics Nikolett|<i class="far fa-check-circle"></i>|<i class="far fa-check-circle"></i>|
+|Juhász Norbert|<i class="far fa-check-circle"></i>|<i class="far fa-check-circle"></i>|
+
+#### Referenciák olvasása és keresése
+
+#### Referenciák szerkesztése
+
+#### Integráció bibHygeia CI rendszerrel
+
+**Ez az altéma jelenleg nem választható**
+
+### bibHygeia Bibtex Toolkit
+
+<img class="logo" style="width: 33%" src="https://github.com/geryxyz/bibHygeia/raw/dev/media/bibHygeia.png"/>
+
+Egy Python alapú referencia gyűjtemény kezelő és karbantartó rendszer, mely a BiBTeX fájlok forráskódszintű kezelését végzi.
+Jelenleg egy parancssori program csomag, mely képes gyakori műveletek autómatizálására.
+A projekt célja, hogy Continuous Integration rendszerben segítse a BiBTeX fájlok karbantartását.
+Idő hiányában nincs aktív fejlesztés alatt. Biber (BibLaTeX), LaTeX és Git biztos, hogy jelentős szerepet játszik majd.
+
+<a href="https://github.com/geryxyz/bibHygeia"><i class="fab fa-github-square"></i> Projekt forráskód</a>
+
+**Hallgatók**
+
+| Név | Elvállalta | Közös munka |
+|--|--|--|
+|Székely Norbert|<i class="far fa-check-circle"></i>|<i class="far fa-check-circle"></i> *amennyiben a szabálysértések felismerésének megvalósítása mind a két altéma része, ezzel csökkentve a függőséget*|
+
+#### Forráskód és egyéb szabálysértések jelzése
+
+#### Szabálysértések javításe, javaslatok megfogalmazása
+
+#### Szabálysértések halmazának bővítése
+
+**Ez az altéma jelenleg nem választható**
+
+## Saját témák
+
+### Veszélyzóna
+
+Kétszemélyes, táblás, körökre osztott, elvont társosjáték.
+
+**Hallgatók**
+
+| Név | Elvállalta |
+|--|--|
+|Kószó Patrick|<i class="far fa-check-circle"></i>|
+
+## Korábbi témák
+
+Korábbi években megoldott problémák. Bizonyos esetben továbbfejlesztési lehetőség is felmerülhet.
+
+### CodeMetropolis
+
+<img class="logo" style="width: 33%" src="/assets/images/logos/codemetropolis.png"/>
+
+**Jelenleg csak egy hallgató vállalhatja el.**  
+Egy Minecraft alapú forrás kód vizuálizaciós parancssori program. Tisztán Java nyelven készült.
+Jelenleg stabil verzióval rendelkezik, ezért első körben tesztelés és karbantartással kapcsolatos munkát jelent.
+
+<a href="http://codemetropolis.github.io/CodeMetropolis/"><i class="fas fa-external-link-alt"></i> Official page</a>
+
+**Hallgatók**
+
+| Név | Elvállalta |
+|--|--|
+|Bányai Zoltán|<i class="far fa-check-circle"></i>| 
+
+### iFL4Eclipse
+
+<img class="logo" style="width: 33%" src="/assets/images/logos/iFL4Eclipse.png"/>
+
+**Nem tudok több hallgatót vállalni**  
+Egy Java alapú Eclipse plug-in. Jelenleg stabil verzióval rendelkezik, továbbfejlesztéssel kapcsolatos feladatokra kell számítani
+
+<a href="https://github.com/sed-szeged/iFL4Eclipse"><i class="fas fa-external-link-alt"></i> Official page</a>
+
+### CROSSMINER
+
+**Nem tudok több hallgatót vállalni**  
+It enables the monitoring, in-depth analysis and evidence-based selection of open source components,
+and facilitates knowledge extraction from large open-source software repositories.
+
+<a href="https://www.crossminer.org/"><i class="fas fa-external-link-alt"></i> Official page</a>
+-->

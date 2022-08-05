@@ -1,0 +1,173 @@
+states:
+    - &open "open"
+    - &in_progress "in progress"
+    - &finished "finished"
+projects:
+    - &augp
+        name: "AugP."
+        site: "https://github.com/AugmentedPaper"
+        logo: "https://avatars.githubusercontent.com/u/86964161?s=400&u=b55dcc1c530cda94fb732d106eef47a9a3e25b05&v=4"
+    - &wan_shi_tong
+        name: "Wan Shi Tong"
+        site: "https://github.com/geryxyz/WanShiTong"
+        logo: "https://github.com/geryxyz/WanShiTong/raw/main/resource/logo/logo02-alpha.png"
+    - &codemetropolis
+        name: "CodeMetropolis"
+        site: "http://codemetropolis.github.io/CodeMetropolis/"
+        logo: "https://github.com/codemetropolis/CodeMetropolis/raw/gh-pages/images/site-logo.png"
+    - &bibhygeia
+        name: "bibHygeia"
+        site: "https://github.com/geryxyz/bibHygeia"
+        logo: "https://github.com/geryxyz/bibHygeia/raw/dev/media/bibHygeia.png"
+theses:
+    -
+        author: ""
+        title: ""
+        year_of_publish: 0
+        state: ""
+        project: {}
+        abstract: >
+            ""
+    -
+        author: "Olasz Patrik"
+        title: "AugP. – tudományos publikációk 3D tartalmának megtekintése augmentált valóságban"
+        year_of_publish: 2021
+        state: *finished
+        project: *augp
+        abstract: >
+            Gyakori probléma, hogy tudományos publikációkban található háromdimenziós
+            objektumokat az olvasók nem, vagy csak nehezen nézhetnek meg 3D környezetben. A
+            hallgató feladata egy olyan megoldás elkészítése, amellyel kinyomtatott példányok
+            olvasóinak lehetőségük van egyszerűen megtekinteni ezeket a háromdimenziós elemeket
+            azok mindhárom dimenzióját megtartva. A probléma megoldásához két alkalmazás
+            fejlesztésére van szükség.
+            A hallgatónak az olvasók számára egy olyan okostelefonos alkalmazást kell
+            fejlesztenie a Unity játékmotort felhasználva, amely kódok beszkennelése után képes a
+            kódhoz rendelt háromdimenziós elem betöltésére augmentált valóságban.
+            A szerzőknek egy webes applikáció elkészítése a feladat tetszőleges nyelvet és
+            keretrendszert felhasználva. Egy szerző itt a háromdimenziós objektumokat ábrázoló
+            képeihez kódokat képes csatolni, amelyek az okostelefonos alkalmazással
+            beszkennelhetőek.
+    -
+        author: "Adonics Nikolett"
+        title: "BiBTeX és Git alapú referencia kezelő programkönyvtár"
+        year_of_publish: null
+        state: *in_progress
+        project: *wan_shi_tong
+        abstract: >
+            A kutatók gyakran hivatkoznak más publikációkra a saját tudományos cikkeikben. Ezeknek
+            a hivatkozásait BiBTeX fájlokban tárolhatjuk és Git verziókövető rendszerben kezelhetjük.
+            Sajnos a jelenlegi referencia menedzselő rendszerek nem felelnek meg minden
+            kutatócsoport igényeinek, pl. csak közvetett támogatást adnak a referencia kezelésére.
+            Ezeknek az egyéni igényeknek a megvalósítását fogja segíteni az általam készített lib.
+            Az én feladatom egy programkönyvtár elkészítése Python nyelven, ami lehetővé fogja
+            tenni, hogy az egyedi referencia kezelő rendszerek kezeljék és módosítsák a referenciákat
+            Python hívásokon és Python objektumokon keresztül. Az elkészült csomag képes lesz
+            feldolgozni a Git repository-ban BiBTeX segítségével központilag tárolt tudományos
+            publikációk hivatkozásait.
+            A könyvtáramat felhasználja Juhász Norbert hallgató, az általa készített webes
+            kezelőfelület megvalósításához. A könyvtáram valós környezetben történő tesztelése ezen a
+            rendszeren keresztül történik.
+            A kutatók a hivatkozást a központi BibTeX fájl letöltését követően tudják majd használni,
+            ez a Git segítségével fog megtörténni. A BiBTeX fájl fogja tartalmazni a kutató által használt
+            referenciákat.
+    -
+        author: "Bányai Zoltán"
+        title: "Tesztautomatizáló keretrendszer fejlesztése és regressziós tesztelések végzése a CodeMetropolis szoftver vizualizációs programon"
+        year_of_publish: null
+        state: *in_progress
+        project: *codemetropolis
+        abstract: >
+            A CodeMetropolis egy szoftver vizualizációs program, amelynek segítségével a forráskód egy
+            városként kerül reprezentálásra, ahol a metódusok épületek formájában, az osztályok
+            kertekként, a namespace-k pedig kerületekként vannak ábrázolva egy Mojang által fejlesztett
+            Minecraft nevű, máig frissülő játékban. A projekt 2016-ban érte el a fent taglalt változatát,
+            avagy állt össze egy használható programmá. Az azóta eltelt idő alatt számos módosítási és
+            újítási javaslat érkezett hozzá, hiszen a vizualizációhoz szükséges játék is rengeteg újdonsággal
+            lett gazdagabb, így a CodeMetropolis mára elavulttá vált a vizualizáló játékhoz képest. Emiatt
+            a felhasználó egyre több megkötést kényszerül meghozni. Ezen felül felmerültek további
+            felhasználói igények és javaslatok is, melyek tovább bővítenék a program által nyújtott
+            funkciók listáját.
+            A szakdolgozat célja, hogy a CodeMetropolis program és a hozzá tervezett módosítások és
+            újítások naprakészen, minél kevesebb hibát tartalmazva rendelkezésre álljon az oktatásban
+            történő későbbi felhasználására, továbbá megkönnyítse a program későbbi módosítási és
+            továbbfejlesztési munkálatait. Ennek megvalósításához funkcionális, end user, és regressziós
+            teszteket végzek mind a program jelenlegi stabil változatán, mind a későbbi fejlesztett
+            változatain, amikor már különféle funkciókkal bővült a program.
+    -
+        author: "Juhász Norbert"
+        title: "Git és BibTeX alapú tudományos referencia kezelő rendszer webes kezelőfelülete"
+        year_of_publish: 2022
+        state: *finished
+        project: *wan_shi_tong
+        abstract: >
+            Kutatók tudományos cikkeik írása közben gyakran hivatkoznak más kutatók anyagára
+            referenciaként, forrásként. Ezen publikációk kezelésére létezik megoldás, ilyen például a
+            Mendeley. Viszont vannak olyan kutatók, akik a Git és BibTeX technológiákat részesítik
+            előnyben, nekik a Mendeley nem elégséges megoldás.
+            A hallgató feladata egy olyan rendszernek a webes kezelőfelületének kifejlesztése,
+            ami a publikációkat Git-ben tárolja BiBTeX segítségével. Ez a program fel van készítve
+            az adatszolgáltató réteggel való kommunikációra is.
+    -
+        author: "Kószó Patrick"
+        title: "A Militarized Zone társasjáték fejlesztése"
+        year_of_publish: null
+        state: *in_progress
+        project: null
+        abstract: >
+            Számos játék létezik már a világon, melyek mindegyike valamilyen egyedi módon vonja magára a figyelmét.
+            Már régóta felkeltette a figyelmemet a játékfejlesztés lehetősége, így adta magát az ötlet,
+            hogy szakdolgozatom ezen műfajban készítsem el.
+            Az általam fejlesztett játék egy 2 személyes absztrakt játék, amely egy egyedileg kigondolt és
+            megtervezett ötleten alapszik. Maga a játék egy 2 dimenziós négyzetrácsos pályán játszódik.
+            A játék célja, hogy minél több területet foglaljunk el. Ehhez különböző bombák állnak rendelkezésünkre,
+            melyek mindegyike egyedi alakzatban robban fel a pályán, így foglalva el különböző területeket a játékos számára.
+            Egy-egy bomba felrobbanása után akadályok keletkeznek a pályán, amelyek a törmeléket szimbolizálják,
+            melyek a robbanás következményében jöttek létre. A játék akkor ér véget, amikor már több bomba nem helyezhető el a pályán.
+            Mivel egy 2 személyes játékról beszélünk, ezért a tervek között szerepel az is, hogy hálózaton keresztül is játszható legyen majd.
+    -
+        author: "Székely Norbert"
+        title: "Szabálysértések detektálása BibTeX fájlokban Continuous Integration rendszert használva"
+        year_of_publish: 2022
+        state: *finished
+        project: *bibhygeia
+        abstract: >
+            Tudományos cikkek és kutatások írása során a legelterjedtebb technológia, a LATEX dokumentum
+            készítése. Ez egy széles körben elterjedt dokumentumkészítő eszköz, melynek
+            számos előnye, illetve hátránya is van.
+            Ezekben a dokumentumokban akár több tíz, vagy száz külső írásra való hivatkozás is
+            szerepelhet, így ezen referenciákat tartalmazó BIBTEX fájlok kezelésével és karbantartásával
+            sok időt vesztegethet el a dokumentum szerzője.
+            Szakdolgozat témájaként a bibHygeia Python parancssori program, egy BIBTEX referencia
+            fájlokat forráskódszinten diagnosztizáló és karbantartó rendszer továbbfejlesztése
+            a cél. A szoftver fő célja, hogy segítse a dokumentum szerzőjét a bibliográfiai fájlokban
+            potenciális szabálysértések elkerülését. Ezt mind lokálisan parancssori programként is lehet
+            használni, illetve egyszerűen integrálható Continuous Integration (CI) rendszerbe is,
+            ezzel biztosítva lehetőséget azon felhasználóknak, akik verziókövető rendszerben kezelik
+            a LATEX-dokumentum és hozzá tartozó fájlokat.
+    -
+        author: "Nagy Dominik"
+        title: "Beadandók automatikus ellenőrzése verziókövető és projektmenedzsment rendszerekben"
+        year_of_publish: null
+        state: *in_progress
+        project: null
+        abstract: >
+            Szakdolgozatom témája, egy olyan alkalmazás elkészítése, amelyet egyaránt oktatók és
+            hallgatók is tudnak használni olyan beadandók ellenőrzésére, amelyek több fájl feltöltését
+            igénylik egy Gitlab vagy Github szerverre. Számtalan tárgyból vannak bizonyos
+            mérföldkövek, határidők amelyek bizonyos fájlok feltöltését, dokumentálását,
+            nyomonkövetését és egyéb vele járandó műveleteket követelnek. Ezek ellenőrzésére jelenleg
+            nincs automatikus rendszer és a hallgató, egyben az oktató is magára van utalva, ilyen esetben
+            kénytelenek maguktól minden egyes fájlt manuálisan ellenőrizni, név, méret, mappa szerkezet
+            és más egyéb szempontból. Illetve a megfelelő commit és issue kezelés, ezek számának
+            ellenőrzése is szintén rájuk hárul. Célom egy olyan alkalmazás létrehozása, amely mindezt
+            automatikusan és megismételhető módon elvégzi, így a felhasználó egyben erőt és rengeteg
+            időt megspórolhat.
+    -
+        author: ""
+        title: ""
+        year_of_publish: 0
+        state: ""
+        project: {}
+        abstract: >
+            ""
