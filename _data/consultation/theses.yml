@@ -19,6 +19,10 @@ projects:
         name: "bibHygeia"
         site: "https://github.com/geryxyz/bibHygeia"
         logo: "https://github.com/geryxyz/bibHygeia/raw/dev/media/bibHygeia.png"
+    - &sourcemeter
+        name: "SourceMeter"
+        site: "https://www.sourcemeter.com/"
+        logo: "https://www.sourcemeter.com/assets/SM_logo.svg"
 theses:
     -
         author: ""
@@ -164,10 +168,88 @@ theses:
             automatikusan és megismételhető módon elvégzi, így a felhasználó egyben erőt és rengeteg
             időt megspórolhat.
     -
-        author: ""
-        title: ""
-        year_of_publish: 0
-        state: ""
-        project: {}
+        author: "Chen Péter"
+        co_consultant: "Siket István"
+        title: "Rendszer architektúra tervezése és megvalósítása a SourceMeter statikus elemző Microsoft Visual Studio fejlesztői környezetbe való beépítéséhez"
+        year_of_publish: 2020
+        state: *finished
+        project: *sourcemeter
         abstract: >
-            ""
+            A szakdolgozat témája a SourceMeter statikus elemzőt működtető Visual Studio extension architektúrájának
+            megtervezése és az alapvető komponensek megvalósítása. A rendszer célja, hogy a Visual Studio fejlesztői
+            környezetben kezelt projektjeinket egyszerűen tudjuk elemezni a SourceMeter segítségével és
+            ennek eredményéről részletes információkat szolgáltassunk a felhasználó számára.
+            Az eredmények között szerepelhetnek a különféle metrikák, szabálysértések és kód másolatok.
+    -
+        author: "Nyíri Péter"
+        co_consultant: "Beszédes Árpád"
+        title: "Kód materializáció - Forráskód metrikák megjelenítése három dimenziós város makettként"
+        year_of_publish: 2020
+        state: *finished
+        project: *codemetropolis
+        abstract: >
+            A szakdolgozatom a CodeMetropolis nyílt forráskódú program egy új moduljának a lefejlesztése, hozzáadása.
+            Ez az új modul a Materialization. Az eredeti szoftver a forráskódon előzően, más program által készített,
+            különböző mérési eredményeket dolgozza fel. Például milyen hosszú, hány sorból áll, mennyi osztály szerepel
+            benne, mind statikus mérés, melyeket a program futtatása nélkül végzünk el. Később ezeket felhasználva
+            készít el egy várost egy számítógépes játékban, a Minecraft világban. Itt a különböző épületek magassága,
+            szélessége, mélysége, emeletek száma, bármilyen elkészült épület térbeli tulajdonságai a forráskód mérései
+            alapján lettek elkészítve. Több orvosi tanulmány is rámutatott arra, milyen fontos a látás és a tapintás
+            közötti kapcsolat, ugyanis a két érzékelés együttesen adja a legpontosabb képet a minket körbevevő tárgyakról.
+            Ezt a szemléletet felismerve kezdtem el fejleszteni a Materialization modult,
+            hogy a virtuálisan létező várost fizikailag is a kézben lehessen tartani.
+    -
+        author: "Savanya Bence"
+        title: "Többjelölős Augmented Reality fejlesztése Unity-ben"
+        year_of_publish: 2021
+        state: *finished
+        project: null
+        abstract: >
+            A jelentkező feladata a Vuforia kiterjesztett valóság program alapjain egy többjelölős
+            verzió megvalósítása Unity grafikus motor felhasználásával.
+            A programnak az alábbi elemeket kell tartalmaznia:
+            Egy kalibrációs rész, amelynek feladata, hogy bevigye a programba az adott jelölők egymáshoz viszonyított helyzetét.
+            Egy render rész, amelyik elhelyez egy előre megadott modellt az előre megadott jelölők helyzetének számtani középpontjára.
+            Egy felhasználói felület, amely összeköti a két részt, és amelyen keresztül használható lesz a program.
+    -
+        author: "Selmeczky Ádám"
+        co_consultant: "Siket István"
+        title: "A statikus kódelemzés felhasználói élményének javítása a SourceMeter integrálásával a Microsoft Visual Studio alkalmazásban"
+        year_of_publish: 2020
+        state: *finished
+        project: *sourcemeter
+        abstract: >
+            A forráskód minősége egy fontos szempont, amit sok helyen megkövetelnek, hogy a lehető legjobb legyen.
+            Annyi programozási stílus van, ahány programozó, ezért egy nagyobb rendszerben, amit többen fejlesztenek,
+            előfordulhatnak olyan hibák, sebezhetőségek, amiket nem jelez a fordító, de fontos szerepük lehet később
+            a szoftver átláthatóságában, biztonságában és annak bővíthetőségében. Ezért a Szoftverfejlesztési Tanszék
+            kifejlesztett (és még most is fejleszt) egy olyan eszközt, ami statikus kódelemzés segítségével képes
+            kimutatni ezeket a hibákat, sebezhetőségeket és hiányosságokat. Ez a termék a SourceMeter, ami több
+            nyelvhez képes statikus elemzéseket végrehajtani, többek között C#-hoz, C++-hoz, Java-hoz és Python-hoz.
+            A SourceMeter alapvetően egy parancssori eszköz, amihez nem tartozik olyan felület, amin az általa generált
+            adatokat meg lehetne jeleníteni Visual Studio-ban, ami az egyik legelterjedtebb fejlesztőkörnyezet C#-hoz
+            és .Net-hez. Ezért ennek a szakdolgozatnak a célja, hogy a fejlesztő minden SourceMeter funkciót el tudjon
+            érni Visual Studio-ból anélkül, hogy megzavarnánk a hétköznapi munkamenetét. Ehhez egy olyan bővítményt
+            kell készíteni Visual Studio-hoz, ami a fejlesztőknek segítene abban, hogy az általuk fejlesztett
+            rendszeren, könnyedén tudjanak elemzéseket futtatni a SourceMeter eszközzel, azoknak az eredményéből
+            pedig ki tudják szűrni a számukra fontos információkat, ezzel segítve őket a fejlesztési folyamatban.
+            Fontos, hogy az elemzési eredmények vizuális megjelenítéséhez egy könnyen átlátható és használható
+            felhasználói felületet készítsünk. A grafikus felület fejlesztése során, többek között sor fog kerülni
+            annak a bemutatására is, hogy miért fontos az, hogy a bővítmény vizuális megjelenése identikus
+            legyen a fejlesztőkörnyezettel.
+    -
+        author: "Szamosvölgyi Zsolt János"
+        co_consultant: "Ferenc Rudolf"
+        title: "Virtuális valóság alapú kutatási alkalmazás készítése a téri-vizuális neglekt szindróma diagnosztikájához"
+        year_of_publish: 2021
+        state: *finished
+        project: null
+        abstract: >
+            A feladat egy olyan virtuális valóság környezet implementálása, amelyben lehetőség nyílik
+            a vizuális neglekt szindróma vizsgálatára. A feladat során több, a virtuális valóság
+            megjelenítésére alkalmas eszközön működő alkalmazást kell készíteni. Az elkészült alkalmazásnak
+            az alábbi feladatokat kell ellátnia. - Az szoftver egy 3D színtérbe helyezi a
+            felhasználót, ahol képes a virtuális valóságban forgatni a fejét. A színtéren megjelenő különböző
+            ingerek jelennek meg a felhasználó számára, melyek érzékeléséről a felhasználó
+            valamilyen jelzést ad. - A szoftver a mérés alatt adatokat gyűjt a tesztelés kimeneteléről
+            későbbi adatfeldolgozás céljából.
