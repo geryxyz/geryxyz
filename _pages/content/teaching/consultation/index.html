@@ -68,18 +68,26 @@ toc: false
     Bár iparkodom minél hamarabb válaszolni, kérem vegyük figyelembe, hogy a témavezetés a munkám része,
     ezért általában munkaidőben foglalkozom vele: hétköznap 8-16 óra között.</p>
 
+{% assign theses_by_date = site.data.consultation.theses.theses | sort_natural: "year_of_publish" %}
+
 <h2>Projektek</h2>
 
 Az alábbi lista azokat a szoftver rendszereket tartalmazza, melyekhez kapcsolódóan különböző dolgozat témák alakíthatóak ki. A hallgatóknak választhatnak a szabad témák közül, módosíthatják azokat, de új témákat is javasolhatnak.
 
 {% for project in site.data.consultation.theses.projects %}
-    <div class="project" id="{{ project.name | url_encode }}">
-        <img alt="{{ project.name }}" src="{{ project.logo }}"/>
-        <a href="{{ project.site }}">{{ project.name }}</a>
-    </div>
+    <h3 id="{{ project.name | url_encode }}">{{ project.name }} <a class="anchor" href="{{ project.site }}"><i class="fas fa-external-link-alt"></i></a></h3>
+    <img alt="{{ project.name }}" src="{{ project.logo }}" style="width: 15%"/><br/>
+    <p class="list">
+    {% for thesis in theses_by_date %}
+        {% if thesis.project.name == project.name %}
+            <span class="author">{{ thesis.author }}:</span> <span class="title">{{ thesis.title }}</span>
+            <a href="#{{ thesis.title | url_encode }}"><i class="fa fa-arrow-down"></i></a>
+            <br/>
+        {% endif %}
+    {% endfor %}
+    </p>
 {% endfor %}
 
-{% assign theses_by_date = site.data.consultation.theses.theses | sort_natural: "year_of_publish" %}
 
 <h2>Folyamatban lévő dolgozatok</h2>
 
