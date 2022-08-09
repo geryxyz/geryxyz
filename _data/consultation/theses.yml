@@ -23,6 +23,10 @@ projects:
         name: "SourceMeter"
         site: "https://www.sourcemeter.com/"
         logo: "https://www.sourcemeter.com/assets/SM_logo.svg"
+    - &ifl4eclipse
+        name: "iFL4Eclipse"
+        site: "https://interactivefaultlocalization.github.io/"
+        logo: "https://github.com/InteractiveFaultLocalization/InteractiveFaultLocalization.github.io/raw/main/logo/logo_for_circle.png"
 theses:
     -
         author: ""
@@ -253,3 +257,47 @@ theses:
             ingerek jelennek meg a felhasználó számára, melyek érzékeléséről a felhasználó
             valamilyen jelzést ad. - A szoftver a mérés alatt adatokat gyűjt a tesztelés kimeneteléről
             későbbi adatfeldolgozás céljából.
+    -
+        author: "Papp Gábor Sándor"
+        co_consultant: "Horváth Ferenc"
+        title: "Hibalokalizációhoz szükséges kód lefedettségi adatok számításának integrációja az Eclipse fejlesztő környezetbe"
+        year_of_publish: null
+        state: *in_progress
+        project: *ifl4eclipse
+        abstract: >
+            Mára a programozók munkájának elengedhetetlen eszközévé váltak a különböző fejlesztői környezetek,
+            amelyek segítik őket a kód megírásában, tesztelésében, hibák keresésében, javításában.
+            Ezen felül olyan különálló eszközök érhetőek el még számukra, amelyek a hibák keresését különböző
+            algoritmusok segítségével gyorsítják meg. A hibakeresés a programozók munkájának fontos része,
+            amiben interakcióba lépnek a kóddal, hogy annak szemantikai, szintaktikai hibáit kiküszöböljék.
+            Ebben segítenek a Spectrum-Based Fault Localization (SBFL) algoritmusok, amelyek kód lefedettség
+            alapján számítják ki, hogy mekkora eséllyel hibás egy adott kódrészlet. Azonban ezen eszközök
+            gyakori hátulütője, hogy a fejlesztői környezettől teljesen különállóak, így a két eszköz egyszerre
+            való használata körülményessé teszi a munkát.  A két alkalmazás között váltani kell, ezzel lassul
+            a munkafolyamat, mindeközben, ha módosítjuk a kódot, akkor a kód lefedettséget újra kell számítani.
+            Ez sok időt vesz igénybe, ezért szükséges a két eszköz kombinálása.
+    -
+        author: "Sági Balázs"
+        co_consultant: "Horváth Ferenc"
+        title: "Az iFL Eclipse bővítmény kibővítése utasításszintű hibalokalizációval"
+        year_of_publish: 2021
+        state: *finished
+        project: *ifl4eclipse
+        abstract: >
+            Szoftverfejlesztéskor fontos az esetlegesen felmerülő hibák mihamarabbi detektálása, javítása.
+            Ezt különböző szinten különböző módszerekkel lehet megtenni, a legköltségkímélőbb módja az,
+            ha már a fejlesztés közben is odafigyelünk és ellenőrizzük a kódunkat. Jelenleg az egyetemi
+            fejlesztés alatt álló iFL metódus szintre tud hiba-valószínűséget megadni. Ez egy fejlesztőnek
+            nem mindig kielégítő információ, túl nagy kódrészt kellhet kézzel átvizsgálnia.
+            Az utasítás szintű hibalokalizáció ennél jóval pontosabb, részletesebb és precízebb adatokkal szolgál.
+            A szakdolgozat témája az iFL metódusszintű hibakereső szoftver kibővítése és a bővítés működésének
+            bemutatása. Az iFL az Eclipse fejlesztői környezethez letölthető bővítmény. A feladat az iFL
+            továbbfejlesztése metódusszintről sorszintre, ezzel a fejlesztők mélyebb betekintést kaphatnak
+            az esetleges hibák eredetére.
+            Ehhez felhasználásra kerül a JaCoCo nevű könyvtár, amely utasításszinten képes hiba-valószínűség
+            értékeket számolni. Ennek a programnak a kimenetét kell felhasználni az iFL kibővített működéséhez,
+            ehhez először be kell üzemelni, majd utasításszintű lefedettségmérést előállítani vele.
+            Ezt követi egy hiba-valószínűség érték számító beüzemelése és megismerése, amit majd tovább kell
+            fejleszteni a JaCoCo utasításszíntű kimenetének kezelésére. Végül az iFL plugin részletesebb
+            megismerésével, annak belső struktúrájának átalakításával - hogy kezelje az utasításszintet
+            – kellene befejezni a munkát.
