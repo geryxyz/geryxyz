@@ -301,3 +301,38 @@ theses:
             fejleszteni a JaCoCo utasításszíntű kimenetének kezelésére. Végül az iFL plugin részletesebb
             megismerésével, annak belső struktúrájának átalakításával - hogy kezelje az utasításszintet
             – kellene befejezni a munkát.
+    -
+        author: null
+        title: "WanShiTong hivatkozás kezelő rendszer újratervezése Flask alapokon a felhasználói élmény fokozása érdekében"
+        year_of_publish: null
+        state: *open
+        project: *wan_shi_tong
+        abstract: >
+            A projekt jelenleg a Tornado keretrendszert használja. Bár a projekt megvalósít bizonyos alapvető funkciókat
+            maga az elkészült program inkább prototípus szintjén van. A felhasználói élmény jelentős javításra szorul.
+            Emellett a fejlesztőcsapat szakértelmét is figyelembe véve praktikus lenne módosítani az alap webes keretrendszert.
+            Az új keretrendszer a Flask.
+    -
+        author: ""
+        title: ""
+        year_of_publish: 0
+        state: ""
+        project: {}
+        abstract: >
+            ""
+    -
+        author: ""
+        title: ""
+        year_of_publish: 0
+        state: ""
+        project: {}
+        abstract: >
+            ""
+    -
+        author: ""
+        title: ""
+        year_of_publish: 0
+        state: ""
+        project: {}
+        abstract: >
+            ""

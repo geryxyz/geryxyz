@@ -72,7 +72,9 @@ toc: false
 
 <h2>Projektek</h2>
 
-Az alábbi lista azokat a szoftver rendszereket tartalmazza, melyekhez kapcsolódóan különböző dolgozat témák alakíthatóak ki. A hallgatóknak választhatnak a szabad témák közül, módosíthatják azokat, de új témákat is javasolhatnak.
+<p>
+    Az alábbi lista azokat a szoftver rendszereket tartalmazza, melyekhez kapcsolódóan különböző dolgozat témák alakíthatóak ki. A hallgatóknak választhatnak a szabad témák közül, módosíthatják azokat, de új témákat is javasolhatnak.
+</p>
 
 {% for project in site.data.consultation.theses.projects %}
     <h3 id="{{ project.name | url_encode }}">{{ project.name }} <a class="anchor" href="{{ project.site }}"><i class="fas fa-external-link-alt"></i></a></h3>
@@ -88,6 +90,18 @@ Az alábbi lista azokat a szoftver rendszereket tartalmazza, melyekhez kapcsoló
     </p>
 {% endfor %}
 
+<h2 id="open-topics">Választható témák</h2>
+
+<p>
+    A tématervek végleges verziójának kialakítása a hallgatókkal együtt történik, ezzel is lehetőséget adva számukra,
+    hogy értékes ötleteikkel és javaslataikkal hozzájáruljanak a projektek minőségéhez.
+</p>
+
+{% for thesis in theses_by_date %}
+    {% if thesis.state == "open" %}
+        {% include thesis.liquid thesis=thesis %}
+    {% endif %}
+{% endfor %}
 
 <h2>Folyamatban lévő dolgozatok</h2>
 
