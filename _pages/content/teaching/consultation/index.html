@@ -82,7 +82,10 @@ toc: false
     <p class="list">
     {% for thesis in theses_by_date %}
         {% if thesis.project.name == project.name %}
-            <span class="author">{{ thesis.author }}:</span> <span class="title">{{ thesis.title }}</span>
+            {% if thesis.author %}
+            <span class="author">{{ thesis.author }}:&nbsp;</span>
+            {% endif %}
+            <span class="title">{{ thesis.title }}</span>
             <a href="#{{ thesis.title | url_encode }}"><i class="fa fa-arrow-down"></i></a>
             <br/>
         {% endif %}

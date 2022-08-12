@@ -1,7 +1,7 @@
 <h3 id="{{ thesis.title | url_encode }}">{{ thesis.title }}</h3>
 <p class="author">
     {{ thesis.author }}{% if thesis.year_of_publish %}, {{ thesis.year_of_publish }}{% endif %}
-    {% if thesis.co_consultant %}<br/>Társtémavezető: {{ thesis.co_consultant }}{% endif %}
+    {% if thesis.co_consultant %}<br/>Társtémavezető: {{ thesis.co_consultant | join: ", " }}{% endif %}
 </p>
 <p>{{ thesis.abstract }}</p>
 {% if thesis.project.name %}

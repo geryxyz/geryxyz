@@ -27,6 +27,14 @@ projects:
         name: "iFL4Eclipse"
         site: "https://interactivefaultlocalization.github.io/"
         logo: "https://github.com/InteractiveFaultLocalization/InteractiveFaultLocalization.github.io/raw/main/logo/logo_for_circle.png"
+    - &crossminer
+        name: "CROSSMINER"
+        site: "https://www.crossminer.org/"
+        logo: "https://static.wixstatic.com/media/d3bb5c_bb30843beeb14b0db7919051c8e043f5~mv2.png/v1/fill/w_420,h_134,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d3bb5c_bb30843beeb14b0db7919051c8e043f5~mv2.png"
+    - &ko_li
+        name: "Ko-Li"
+        site: "https://github.com/geryxyz/ko-li"
+        logo: "/assets/images/logos/file-circle-question-solid.svg"
 theses:
     -
         author: ""
@@ -312,6 +320,129 @@ theses:
             maga az elkészült program inkább prototípus szintjén van. A felhasználói élmény jelentős javításra szorul.
             Emellett a fejlesztőcsapat szakértelmét is figyelembe véve praktikus lenne módosítani az alap webes keretrendszert.
             Az új keretrendszer a Flask.
+    -
+        author: "Váradi Endre Tamás"
+        co_consultant:
+            - "Ferenc Rudolf"
+            - "Hegedűs György"
+        title: "A CROSSMINER Eclipse-based IDE Eclipse plug-in architektúrája"
+        year_of_publish: 2019
+        state: *finished
+        project: *crossminer
+        abstract: >
+            A szakdolgozatban elvárt témák egyike a szoftverfejlesztő iparban elég gyakran felmerülő probléma,
+            a szoftverek közötti kommunikáció pontos, hatékony és könnyű kivitelezése, valamint az ezt támogató
+            technológiák áttekintése. A problémafelvetés része két egymástól akár igen távol üzemeltetett szoftver,
+            amelyek között kizárólag hálózaton keresztül cserélődhet információ. Hogy ez zökkenőmentesen
+            történjen, szükségünk van ennek pontos leírására. Ebben nyújt nagy segítséget nekünk az OpenAPI szabvány -
+            korábban Swagger Specification - , ami az ilyen rendszerek specifikálásában segít, valamint az OpenAPI-ra
+            építő további technológiák, amelyekkel a kommunikáció megtervezése vagy kivitelezése válhat könnyebbé
+            számunkra. Az hallgatótól elvárás a CROSSMINER szerver és kliens között zajló kommunikáció bemutatása.
+            A szakdolgozat második témája a CROSSMINER kliensének, egy Eclipse plug-in-nak a belső felépítésének
+            bemutatása és a használt architektúra valamint az eseménykezelő rendszer kifejtése.
+    -
+        author: null
+        co_consultant: "Vancsics Béla"
+        title: "Ko-Li fájlformátum megalkotása: teszt-kód lefedettségi adatok tárolására alkalmas formátum"
+        year_of_publish: null
+        state: *open
+        project: *ko_li
+        abstract: >
+            Számos eszköz képes mérni a teszt kód lefedettségett, azonban ezek különféle formátumokat,
+            felbontásokat és módszereket használnak az információ rögzítésére. A kutatónak meg kell értenie a
+            mögöttes struktúrákat és a formátumok/kimenetek közötti különbségeket. Ezek a feladatok
+            elrabolják tőlük az értékes időt, amelyet a tesztelési és programjavítási ismeretek bővítésére
+            fordíthatnak.
+            Továbbá a különböző forrásból/eszközből kinyert eredmények összehasonlítását nagyban
+            megnehezíti az, hogy a kimenetek nincsenek közös rendszerben, azaz más más szerkezetben,
+            struktúrában tárolják az adatokat, így azok összehasonlítása nagy erőfeszítésbe kerül.
+            Ezért szeretnék megalkotni egy olyan környezetet, amely segítségével hatékonyabban tudják a
+            kutatók a számukra releváns információkat összegyűjteni, tárolni és vizsgálni.
+            A probléma megoldása során egy
+            a kutatásban használható eszközkészlet és formátum létrehozását
+            tűztük ki célul. Ez méreténél fogva meghaladja az át lagos képességű hallgató által a szakdolgozat
+            készítésre szánható erőforrásokat. Ezen erőforrások tényleges mértékét azonban több, számunkra
+            jelenleg ismeretlen tényező is befolyásolja. Ilyenek például a hallgató szakmai képességei, valamint
+            a technikai részletekben rejlő akadályok.
+            A fájlformátum a következő feltételeknek kell megfelelnie.
+            Önállóan, egyébszükséges (fájl)források nélkül képes a releváns információk
+            tárolás ára; kompakt, azaz a fájlok mérete (a benne foglalt adatok függvényében) kicsi legyen;
+            bővíthető, vagyis lehetséges újabb információk hozzáadása a már meglévőekhez;
+            több programozási nyelv számára is könnyen feldolgozható;
+            rugalmas, mely lehetővé teszi különböző részletességű adatok tárolását.
+    -
+        author: null
+        co_consultant: "Vancsics Béla"
+        title: "Ko-Li megjelenítő Python alapú webes alkalmazás a Ko-Li formátumban tárolt adatok ellenőrzésére és megjelenítésére"
+        year_of_publish: null
+        state: *open
+        project: *ko_li
+        abstract: >
+            Számos eszköz képes mérni a teszt kód lefedettségett, azonban ezek különféle formátumokat,
+            felbontásokat és módszereket használnak az információ rögzítésére. A kutatónak meg kell értenie a
+            mögöttes struktúrákat és a formátumok/kimenetek közötti különbségeket. Ezek a feladatok
+            elrabolják tőlük az értékes időt, amelyet a tesztelési és programjavítási ismeretek bővítésére
+            fordíthatnak.
+            Továbbá a különböző forrásból/eszközből kinyert eredmények összehasonlítását nagyban
+            megnehezíti az, hogy a kimenetek nincsenek közös rendszerben, azaz más más szerkezetben,
+            struktúrában tárolják az adatokat, így azok összehasonlítása nagy erőfeszítésbe kerül.
+            Ezért szeretnék megalkotni egy olyan környezetet, amely segítségével hatékonyabban tudják a
+            kutatók a számukra releváns információkat összegyűjteni, tárolni és vizsgálni.
+            A probléma megoldása során egy
+            a kutatásban használható eszközkészlet és formátum létrehozását
+            tűztük ki célul. Ez méreténél fogva meghaladja az át lagos képességű hallgató által a szakdolgozat
+            készítésre szánható erőforrásokat. Ezen erőforrások tényleges mértékét azonban több, számunkra
+            jelenleg ismeretlen tényező is befolyásolja. Ilyenek például a hallgató szakmai képességei, valamint
+            a technikai részletekben rejlő akadályok.
+            Az elkészült szoftver rendszernek a következő feltételeknek kell megfelelnie.
+            Stabilan működik Windows operációs rendszerek alatt és Google Chrome böngészőben;
+            self-hosting-ra is alkalmas;
+            elérhetővé teszi az alapvető lefedettségi információkat;
+            (a tárolt adatok függvényében) megfelelő gyorsasággal képes működni.
+    -
+        author: null
+        co_consultant: "Vancsics Béla"
+        title: "Ko-Li felhasználása spektrum alapú hibalokalizáció kutatása során"
+        year_of_publish: null
+        state: *open
+        project: *ko_li
+        abstract: >
+            Számos eszköz képes mérni a teszt kód lefedettségett, azonban ezek különféle formátumokat,
+            felbontásokat és módszereket használnak az információ rögzítésére. A kutatónak meg kell értenie a
+            mögöttes struktúrákat és a formátumok/kimenetek közötti különbségeket. Ezek a feladatok
+            elrabolják tőlük az értékes időt, amelyet a tesztelési és programjavítási ismeretek bővítésére
+            fordíthatnak.
+            Továbbá a különböző forrásból/eszközből kinyert eredmények összehasonlítását nagyban
+            megnehezíti az, hogy a kimenetek nincsenek közös rendszerben, azaz más más szerkezetben,
+            struktúrában tárolják az adatokat, így azok összehasonlítása nagy erőfeszítésbe kerül.
+            Ezért szeretnék megalkotni egy olyan környezetet, amely segítségével hatékonyabban tudják a
+            kutatók a számukra releváns információkat összegyűjteni, tárolni és vizsgálni.
+            A probléma megoldása során egy
+            a kutatásban használható eszközkészlet és formátum létrehozását
+            tűztük ki célul. Ez méreténél fogva meghaladja az át lagos képességű hallgató által a szakdolgozat
+            készítésre szánható erőforrásokat. Ezen erőforrások tényleges mértékét azonban több, számunkra
+            jelenleg ismeretlen tényező is befolyásolja. Ilyenek például a hallgató szakmai képességei, valamint
+            a technikai részletekben rejlő akadályok.
+            Az elkészült szoftver rendszert ki kell bővíteni a következő funkciókkal.
+            Alkalmas legyen alapvető spektrum alapú hibalokalizációs algoritmusok futtatására.
+            Képes a felhasználó által megalkotott, egyedi SBFL formulák alapján történő rang számolásra.
+            Képes a call-chain információk tárolására és az erre épülő, alap hibalokalizációs
+            eljárások végrehajtására.
+    -
+        author: null
+        title: "Fél-automatizált szoftveres támogatás Commixit és Doxit játékokhoz"
+        year_of_publish: null
+        state: *open
+        project: null
+        abstract: >
+            A szoftverfejlesztés elsajátítása során a hallgatók számára nehéz a megfelelően részletes és kifejező
+            commit üzenetek és technikai dokumentáció (javadoc, docstring, stb.) megfogalmazása. Oktatóként úgy érezzük
+            a fő indok, hogy a hallgatók nem tapasztalják meg saját maguk ezek fontosságát. Ennek segítésére a Dixit
+            játékhoz hasonló játékos feladatot dolgozunk ki. A hallgatók órán fogják játszani a játékokat a gyakorlatvezető
+            felügyelete mellett. A játékosok csak akkor kapnak pontot, ha a szerző és egy véletlenül választott társa
+            is ugyanazt a jellemzést adja a commit vagy a dokumentáció üzenet alapján. A játék szabályainak oktatókkal való
+            közös kidolgozása a dolgozat része.
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TihOW4OpOB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     -
         author: ""
         title: ""
