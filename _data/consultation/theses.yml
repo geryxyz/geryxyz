@@ -442,7 +442,68 @@ theses:
             felügyelete mellett. A játékosok csak akkor kapnak pontot, ha a szerző és egy véletlenül választott társa
             is ugyanazt a jellemzést adja a commit vagy a dokumentáció üzenet alapján. A játék szabályainak oktatókkal való
             közös kidolgozása a dolgozat része.
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TihOW4OpOB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe
+            width="560" height="315"
+            src="https://www.youtube.com/embed/TihOW4OpOB8"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    -
+        author: null
+        title: "bibHygeia szabálysértéseinek kiértékelése és kibővítése kutatói visszajelzések alapján"
+        year_of_publish: null
+        state: *open
+        project: *bibhygeia
+        abstract: >
+            Tudományos cikkek és kutatások írása során a legelterjedtebb technológia, a LaTeX dokumentum
+            készítése. Ezekben a dokumentumokban akár több tíz, vagy száz külső írásra való hivatkozás is
+            szerepelhet, így ezen referenciákat tartalmazó BIBTEX fájlok kezelésével és karbantartásával
+            sok időt vesztegethet el a dokumentum szerzője. Ennek megkönnyítésére jött létre a bibHygeia rendszer,
+            a fejlesztésben résztvevők által fontosnak és hasznosnak ítélt szabálygyűjteménnyel.
+            Azonban e szabályhalmaz nem feltétlenül teljes. A szakdolgozat célja, hogy gyakorlati példákon és a kutatók
+            visszajelzésén keresztül felmérje ennek fokát. Végül szükség esetén további szabályokkal bővítse a
+            gyűjteményt ill. finomhangolja a meglévő teszt eseteket. A dolgozat célja a tudományos munka végzése és
+            az ehhez szükséges szoftveres támogatás biztosítása.
+    -
+        author: null
+        title: "GitLab issue hálózat grafikus megjelenítése hallgatói munka értékeléséhez"
+        year_of_publish: null
+        state: *open
+        project: null
+        abstract: >
+            A hallgatók által GitLab-ba feltöltött gyakorlati munka értékelése jelenleg manuálisan történik a
+            GitLab-ba beépített issue kezelő rendszer segítségével. Ez rendkívül időigényes folyamat, mivel
+            olykor sok tucat issue közötti bonyolult hivatkozási hálózatot kell átlátni és fejben tartani.
+            A folyamatot nagyban segítené, ha a kérdéses projektbe felvett issue-k hálózatát és az azon
+            munkálkodó hallgatókat grafikus formában is megjelenítenénk. A megjelenítő gráf formátumot használjon majd
+            és Google Chrome böngészőben kell működnie. A megjelenítési igények és a vizualizáció kidolgozása a dolgozat
+            része, melyet a hallgató az oktatókkal együtt végez. Hasonló megjelenítés látható (bár más platformon)
+            az alábbi videóban. Az elkészült rendszerben a hangsúly az interaktív (kereshető) megjelenítésen van és nem
+            a mozgókép generáláson.
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cNBtDstOTmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    -
+        author: null
+        title: "Szoftveres támogatás biztosítása a Rendszerfejlesztés 2 gyakorlati feladatválasztáshoz"
+        year_of_publish: null
+        state: *open
+        project: null
+        abstract: >
+            A dolgozat feladata, hogy egy webes rendszert nyújtson a
+            <a href="https://okt.sed.hu/rf2/gyakorlat/projekt/kick-off/">Rendszerfejlesztés 2 issue választás</a>
+            folyamatának automatizálására. A rendszer fő feladata, hogy megkönnyítse a hallgatók munkáját
+            az adminisztratív terhek szoftveres támogatásával. Emellett a rendszer felgyorsítja a
+            kiértékelés és ellenőrzés folyamatát is. Az új ill. továbbfejlesztett folyamat kidolgozása a dolgozat
+            része, melyet a hallgató az oktatókkal együtt végez. A megvalósítás során figyelembe kell venni
+            a felhasználó hallgatók személyiségi jogait és a TVSZ. kapcsolódó részét. A rendszert fel kell készíteni
+            a csalások és visszaélések kivédésére.
+    -
+        author: ""
+        title: ""
+        year_of_publish: 0
+        state: ""
+        project: {}
+        abstract: >
+            ""
     -
         author: ""
         title: ""
