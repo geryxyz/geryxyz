@@ -465,13 +465,13 @@ theses:
             gyűjteményt ill. finomhangolja a meglévő teszt eseteket. A dolgozat célja a tudományos munka végzése és
             az ehhez szükséges szoftveres támogatás biztosítása.
     -
-        author: null
+        author: Mezei László
         title: "GitLab issue hálózat grafikus megjelenítése hallgatói munka értékeléséhez"
         year_of_publish: null
-        state: *open
+        state: *in_progress
         project: null
         abstract: >
-            A hallgatók által GitLab-ba feltöltött gyakorlati munka értékelése jelenleg manuálisan történik a
+            A hallgatók által GitLab-ba feltöltött gyakorlati munka (pl. <a href="https://okt.sed.hu/rf2/gyakorlat/projekt">Rendszerfejlesztés 2</a>) értékelése jelenleg manuálisan történik a
             GitLab-ba beépített issue kezelő rendszer segítségével. Ez rendkívül időigényes folyamat, mivel
             olykor sok tucat issue közötti bonyolult hivatkozási hálózatot kell átlátni és fejben tartani.
             A folyamatot nagyban segítené, ha a kérdéses projektbe felvett issue-k hálózatát és az azon
