@@ -1,3 +1,6 @@
+import csv
+import os.path
+
 import pandas
 
 if __name__ == "__main__":
@@ -9,4 +12,8 @@ if __name__ == "__main__":
     courses['semester_season'] = courses['semester'].str.split('/').str[2]
     courses['semester_season'] = courses['semester_season'].str.replace('1', 'fall')
     courses['semester_season'] = courses['semester_season'].str.replace('2', 'spring')
-    courses.to_csv('export.csv', index=False)
+    courses.to_csv(
+        os.path.join('..', '_data', 'teaching', 'export.csv'),
+        index=False, encoding='utf-8',
+        quoting=csv.QUOTE_NONNUMERIC
+    )

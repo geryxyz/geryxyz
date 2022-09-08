@@ -38,6 +38,7 @@ exclude:
   - "*.xlsx"
   - ".idea"
   - "*.py"
+  - "data"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

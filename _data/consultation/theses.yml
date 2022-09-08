@@ -35,6 +35,10 @@ projects:
         name: "Ko-Li"
         site: "https://github.com/geryxyz/ko-li"
         logo: "/assets/images/logos/file-circle-question-solid.svg"
+    - &unigda
+        name: "UniGDA"
+        site: "https://github.com/geryxyz/uniGDA"
+        logo: "/assets/images/logos/file-circle-question-solid.svg"
 theses:
     -
         author: ""
@@ -497,13 +501,27 @@ theses:
             a felhasználó hallgatók személyiségi jogait és a TVSZ. kapcsolódó részét. A rendszert fel kell készíteni
             a csalások és visszaélések kivédésére.
     -
-        author: ""
-        title: ""
-        year_of_publish: 0
-        state: ""
-        project: {}
+        author: null
+        title: "UniGDA módszertan használata a szoftverek elemzése során"
+        year_of_publish: null
+        state: *open
+        project: *unigda
         abstract: >
-            ""
+            <p>Az UniGDA egy általános gráfösszehasonlító módszertan. Célja hogy vizsgálhatóvá és elemezhetővé tegye a
+            gráfok közötti eltéréseket és hasonlóságokat. A módszer lényege a lokális elemek hasonlóságának vizsgálata
+            és nem a gráfok azonosságának eldöntése vagy mérése. A téma tudományos jellege miatt csak olyan hallgatónak
+            ajánlom, akit érdekel a kutatás világa (még akkor is ha nem döntötte el). A munka elvégzéséhez alapszintű
+            gráfelméleti és algoritmizációs készség és tudás szükséges. A jelentkező hallgatónak képésnek kellennie arra,
+            hogy megértse a matematikai formalizmust és az angol nyelvű tudományos cikkeket.
+            <a href="https://doktori.bibl.u-szeged.hu/id/eprint/10477/1/thesis_A4.pdf">További ismeretek a témában: 5. fejezet</a></p>
+            <p>Researchers and IT professionals frequently use dataset comparison during software analysis.
+            Additionally, they commonly make judgments based on discrepancies between two representations of the same item's set.
+            To locate the error-prone areas of the system, developers may evaluate the densely linked regions of method call graphs
+            in the context of their position in the package hierarchy tree. A universal technique for graphs, which can be utilized
+            to unify the underlying process of discrepancy analysis, might help with these types of analyses.
+            In this paper, we present a methodology for unified graph's discrepancy analysis, named UniGDA. Its foundation
+            is the previously established domain-specific discrepancy identification approach for cluster comparison.
+            But to capture the similarity structures between the vertices of arbitrary graphs, we use several kinds of characteristic functions.</p>
     -
         author: ""
         title: ""
