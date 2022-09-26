@@ -129,10 +129,10 @@ theses:
             ami a publikációkat Git-ben tárolja BiBTeX segítségével. Ez a program fel van készítve
             az adatszolgáltató réteggel való kommunikációra is.
     -
-        author: "Kószó Patrick"
+        author: null
         title: "A Militarized Zone társasjáték fejlesztése"
         year_of_publish: null
-        state: *in_progress
+        state: *open
         project: null
         abstract: >
             Számos játék létezik már a világon, melyek mindegyike valamilyen egyedi módon vonja magára a figyelmét.
@@ -523,13 +523,28 @@ theses:
             is the previously established domain-specific discrepancy identification approach for cluster comparison.
             But to capture the similarity structures between the vertices of arbitrary graphs, we use several kinds of characteristic functions.</p>
     -
-        author: ""
-        title: ""
-        year_of_publish: 0
-        state: ""
-        project: {}
+        author: "Kószó Patrick"
+        title: "Keycloak felhasználók adatainak exportálása új környezetbe való importáláshoz"
+        year_of_publish: null
+        state: *in_progress
+        project: null
         abstract: >
-            ""
+            Egy cég egyik Spring Bootos projektjében nem szeretett volna a felhasználók bejelentkeztetéséhez, regisztrációjához és tárolásához 
+            saját implementációt készíteni, ezért hozzákapcsoltak egy Identity and Access Management eszközt, a Keycloak-ot (https://www.keycloak.org).
+            Azonban féltek, hogy egy szerverleállás következtében, vagy esetlegesen egy váratlan hiba folytán az adatok elveszhetnek, így arra kértek, 
+            hogy készítsek egy plugin-t, amely készít egy Backup JSON fájlt minden aktív felhasználó számára.
+            Ehhez egy Event Listener plugin-t kellett írnom, melyet a Keycloak adminisztrátor panelján egyszerűen ki lehet majd választani és használni. 
+            A modul feladata, hogy minden regisztráció és bejelentkezés során kinyerjük a felhasználó adatát, majd formattáljuk és egy JSON fájlba írjuk, hogy
+            az egyből importálható állapotba kerüljön, hogy ezeket a formattált JSON fájlokat később közvetlenül tudjuk beimportálni bármely Keycloak szerver 
+            adminisztrátor panelján. A fájlokat gyors olvasása és írása érdekében a felhasználók hash-elt felhasználónevét használjuk, mivel a Keycloak engedélyezi
+            a speciális karakterek használatát felhasználónév választásakor. A plugin azonban nem csak megírja a fájlokat, hanem ki is törli azokat,
+            amennyiben a felhasználó törli a profilját. Így a CRUD műveletek közül az update-en kívül minden megvalósul.
+            Ezeken kívül a plugin még metrikákat is biztosít Prometheus kód formájában (https://prometheus.io), amely egy rendszer és szolgáltatás monitorozó rendszer. 
+            Ezt a kódot egy egyedi endpoint segítségével lehet elérni. A metrikák segítségével tudhatjuk meg, hogy hány Backup fájl található a rendszerben,
+            hányat írtunk meg és töröltünk ki.
+            Az utolsó funkcionalitás, melynek meg kellett még felelni, hogy egy szerver újraindítás következtében, a memóriában lévő azonosítók elvesztek, 
+            melyek szükségesek a működéshez. Ezért ezt egy további endpoint segítségével visszaállíthatóvá kellett tenni, a teljes működés érdekében. 
+            A visszaállításhoz csak egyszerűen meg kell hívni az endpoint-ot újraindítás után.
     -
         author: ""
         title: ""
