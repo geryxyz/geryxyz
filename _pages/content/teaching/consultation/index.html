@@ -70,6 +70,38 @@ toc: false
 
 {% assign theses_by_date = site.data.consultation.theses.theses | sort_natural: "year_of_publish" %}
 
+<h2>Tanulók</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Dolgozat címe</th>
+            <th>Állapot</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for thesis in theses_by_date %}
+            {% if thesis.project.name %}
+                <tr>
+                    <td>{{ thesis.author }}</td>
+                    <td><a href="#{{ thesis.title | url_encode }}">{{ thesis.title }}</a></td>
+                    {% case thesis.state %}
+                        {% when states.open %}
+                            <td><i class="fas fa-spinner"></i></td>
+                        {% when states.in_progress %}
+                            <td><i class="fas fa-check"></i></td>
+                        {% when states.finished %}
+                            <td><i class="fas fa-times"></i></td>
+                        {% else %}
+                            <td>{{ states }}</td>
+                    {% endcase %}
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+
 <h2>Projektek</h2>
 
 <p>

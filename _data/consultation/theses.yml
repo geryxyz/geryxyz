@@ -1,7 +1,7 @@
 states:
-    - &open "open"
-    - &in_progress "in progress"
-    - &finished "finished"
+    open: &open "open"
+    in_progress: &in_progress "in progress"
+    finished: &finished "finished"
 projects:
     - &augp
         name: "AugP."
