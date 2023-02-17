@@ -129,22 +129,18 @@ theses:
             ami a publikációkat Git-ben tárolja BiBTeX segítségével. Ez a program fel van készítve
             az adatszolgáltató réteggel való kommunikációra is.
     -
-        author: null
+        author: Szabó Patrik
         title: "A Militarized Zone társasjáték fejlesztése"
         year_of_publish: null
-        state: *open
+        state: *in_progress
         project: null
         abstract: >
-            Számos játék létezik már a világon, melyek mindegyike valamilyen egyedi módon vonja magára a figyelmét.
-            Már régóta felkeltette a figyelmemet a játékfejlesztés lehetősége, így adta magát az ötlet,
-            hogy szakdolgozatom ezen műfajban készítsem el.
-            Az általam fejlesztett játék egy 2 személyes absztrakt játék, amely egy egyedileg kigondolt és
-            megtervezett ötleten alapszik. Maga a játék egy 2 dimenziós négyzetrácsos pályán játszódik.
-            A játék célja, hogy minél több területet foglaljunk el. Ehhez különböző bombák állnak rendelkezésünkre,
-            melyek mindegyike egyedi alakzatban robban fel a pályán, így foglalva el különböző területeket a játékos számára.
-            Egy-egy bomba felrobbanása után akadályok keletkeznek a pályán, amelyek a törmeléket szimbolizálják,
-            melyek a robbanás következményében jöttek létre. A játék akkor ér véget, amikor már több bomba nem helyezhető el a pályán.
-            Mivel egy 2 személyes játékról beszélünk, ezért a tervek között szerepel az is, hogy hálózaton keresztül is játszható legyen majd.
+            A játék elindításakor egy főmenü jelenik meg amiben a játék elindításához szükséges szabályokat lehet beállítani.
+            A szabályok a pálya mérete és a bombák szórására vonatkozik. A játék mikor elindul egy négyzetrácsos pálya jelenik meg,
+            amin adott számú katonákat helyezünk el, majd egy zászlóst. A katonák rendelkeznek életerőcsíkkal a zászlósok viszont nem.
+            Először az első, majd a második játékos következik a bombák kilövésével. A bombák lesebzik a katonákat (sajátokat is) illetve
+            a közelben lévő zászlósokat lelassíthatják ha közelükben robban. A bombák robbanása addot szórásban bármelyik mezőbe betalálhat.
+            A játékot akkor nyerte meg valamelyik játékos ha elfogy az ellenfél katonája, vagy a zászlósa beért az ellenfél oldalára.
     -
         author: "Székely Norbert"
         title: "Szabálysértések detektálása BibTeX fájlokban Continuous Integration rendszert használva"
@@ -345,11 +341,11 @@ theses:
             A szakdolgozat második témája a CROSSMINER kliensének, egy Eclipse plug-in-nak a belső felépítésének
             bemutatása és a használt architektúra valamint az eseménykezelő rendszer kifejtése.
     -
-        author: null
+        author: Darányi Miklós
         co_consultant: "Vancsics Béla"
         title: "Ko-Li fájlformátum megalkotása: teszt-kód lefedettségi adatok tárolására alkalmas formátum"
         year_of_publish: null
-        state: *open
+        state: *in_progress
         project: *ko_li
         abstract: >
             Számos eszköz képes mérni a teszt kód lefedettségett, azonban ezek különféle formátumokat,
@@ -525,8 +521,8 @@ theses:
     -
         author: "Kószó Patrick"
         title: "Keycloak felhasználók adatainak exportálása új környezetbe való importáláshoz"
-        year_of_publish: null
-        state: *in_progress
+        year_of_publish: 2023
+        state: *finished
         project: null
         abstract: >
             Egy cég egyik Spring Bootos projektjében nem szeretett volna a felhasználók bejelentkeztetéséhez, regisztrációjához és tárolásához 
