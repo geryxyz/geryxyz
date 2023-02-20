@@ -542,6 +542,22 @@ theses:
             melyek szükségesek a működéshez. Ezért ezt egy további endpoint segítségével visszaállíthatóvá kellett tenni, a teljes működés érdekében. 
             A visszaállításhoz csak egyszerűen meg kell hívni az endpoint-ot újraindítás után.
     -
+        author: "Kocsis Botond József"
+        title: "Játékfejlesztést támogató adatbázis-játékmotor interfész"
+        year_of_publish: null
+        state: *in_progress
+        project: null
+        abstract: >
+            "TBA"
+    -
+        author: ""
+        title: ""
+        year_of_publish: 0
+        state: ""
+        project: {}
+        abstract: >
+            ""
+    -
         author: ""
         title: ""
         year_of_publish: 0
