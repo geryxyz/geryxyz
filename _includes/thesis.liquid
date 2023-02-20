@@ -1,11 +1,11 @@
-<h3 id="{{ thesis.title | url_encode }}">{{ thesis.title }}</h3>
+<h3 id="{{ include.current_thesis.title | url_encode }}">{{ include.current_thesis.title }}</h3>
 <p class="author">
-    {{ thesis.author }}{% if thesis.year_of_publish %}, {{ thesis.year_of_publish }}{% endif %}
-    {% if thesis.co_consultant %}<br/>Társtémavezető: {{ thesis.co_consultant | join: ", " }}{% endif %}
+    {{ include.current_thesis.author }}{% if include.current_thesis.year_of_publish %}, {{ include.current_thesis.year_of_publish }}{% endif %}
+    {% if include.current_thesis.co_consultant %}<br/>Társtémavezető: {{ include.current_thesis.co_consultant | join: ", " }}{% endif %}
 </p>
-<p>{{ thesis.abstract }}</p>
-{% if thesis.project.name %}
-    <p>Ez a téma a következő projekthez kapcsolódik: <a href="#{{ thesis.project.name | url_encode }}">{{ thesis.project.name }}</a>.</p>
+<p>{{ include.current_thesis.abstract }}</p>
+{% if include.current_thesis.project.name %}
+    <p>Ez a téma a következő projekthez kapcsolódik: <a href="#{{ include.current_thesis.project.name | url_encode }}">{{ include.current_thesis.project.name }}</a>.</p>
 {% else %}
     <p>Ez egy hallgató által javasolt téma vagy még nincs hivatalosan projekthez kötve.</p>
 {% endif %}

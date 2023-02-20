@@ -69,38 +69,22 @@ toc: false
     ezért általában munkaidőben foglalkozom vele: hétköznap 8-16 óra között.</p>
 
 {% assign theses_by_date = site.data.consultation.theses.theses | sort_natural: "year_of_publish" %}
+{% assign theses_by_author = site.data.consultation.theses.theses | sort_natural: "author" %}
+{% assign states = site.data.consultation.theses.states %}
 
-<h2>Tanulók</h2>
+<h2>Témák szerzők szerint</h2>
 
-<table>
-    <thead>
-        <tr>
-            <th>Név</th>
-            <th>Dolgozat címe</th>
-            <th>Állapot</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for thesis in theses_by_date %}
-            {% if thesis.project.name %}
-                <tr>
-                    <td>{{ thesis.author }}</td>
-                    <td><a href="#{{ thesis.title | url_encode }}">{{ thesis.title }}</a></td>
-                    {% case thesis.state %}
-                        {% when states.open %}
-                            <td><i class="fas fa-spinner"></i></td>
-                        {% when states.in_progress %}
-                            <td><i class="fas fa-check"></i></td>
-                        {% when states.finished %}
-                            <td><i class="fas fa-times"></i></td>
-                        {% else %}
-                            <td>{{ states }}</td>
-                    {% endcase %}
-                </tr>
-            {% endif %}
-        {% endfor %}
-    </tbody>
-</table>
+<h3>Választható témák</h3>
+
+{% include thesis-student-table.liquid theses=theses_by_author state_filter=states.open %}
+
+<h3>Folyamatban lévő dolgozatok</h3>
+
+{% include thesis-student-table.liquid theses=theses_by_author state_filter=states.in_progress %}
+
+<h3>Elkészült dolgozatok</h3>
+
+{% include thesis-student-table.liquid theses=theses_by_author state_filter=states.finished %}
 
 <h2>Projektek</h2>
 
@@ -133,132 +117,23 @@ toc: false
 </p>
 
 {% for thesis in theses_by_date %}
-    {% if thesis.state == "open" %}
-        {% include thesis.liquid thesis=thesis %}
+    {% if thesis.state == states.open %}
+        {% include thesis.liquid current_thesis=thesis %}
     {% endif %}
 {% endfor %}
 
 <h2>Folyamatban lévő dolgozatok</h2>
 
 {% for thesis in theses_by_date %}
-    {% if thesis.state == "in progress" %}
-        {% include thesis.liquid thesis=thesis %}
+    {% if thesis.state == states.in_progress %}
+        {% include thesis.liquid current_thesis=thesis %}
     {% endif %}
 {% endfor %}
 
 <h2>Elkészült dolgozatok</h2>
 
 {% for thesis in theses_by_date %}
-    {% if thesis.state == "finished" %}
-        {% include thesis.liquid thesis=thesis %}
+    {% if thesis.state == states.finished %}
+        {% include thesis.liquid current_thesis=thesis %}
     {% endif %}
 {% endfor %}
-
-<!--
-## Aktív témák
-
-Még nem kidolgozott problémák melyek általában zöldmezős projektként valósíthatóak meg.
-
-### Wan Shi Tong
-
-**Nem tudok több hallgatót vállalni**
-
-Cél egy Python alapú webes referencia gyűjtemény kezelő rendszer létrehozása. Ez egy zöld mező projekt. Biber, LaTeX és git biztos hogy elég jelentős szerepet játszik majd benne.
-
-A tudományos cikkek hivatkozásait BiBTeX fájlokban tároljuk és Git verziókövető rendszerben kezeljük.
-Sajnos a jelenleg elérhető referencia menedzselő rendszerek csak közvetett (export és import) támogatást adnak, pl. [Mendeley](https://www.mendeley.com/reference-manager/library/all-references).
-Feladat a közvetlen támogatás biztosítása egy új webes rendszeren keresztül.
-A könnyebb elérés érdekében legalább a Google Chrome böngészőt támogatni kell.
-Az alkalmazást fel kell készíteni a későbbi responsive webes felület bevezetésére.
-
-<a href="https://github.com/geryxyz/WanShiTong"><i class="fab fa-github-square"></i> Projekt forráskód</a>
-
-**Hallgatók**
-
-| Név | Elvállalta | Közös munka |
-|--|--|--|
-|Adonics Nikolett|<i class="far fa-check-circle"></i>|<i class="far fa-check-circle"></i>|
-|Juhász Norbert|<i class="far fa-check-circle"></i>|<i class="far fa-check-circle"></i>|
-
-#### Referenciák olvasása és keresése
-
-#### Referenciák szerkesztése
-
-#### Integráció bibHygeia CI rendszerrel
-
-**Ez az altéma jelenleg nem választható**
-
-### bibHygeia Bibtex Toolkit
-
-<img class="logo" style="width: 33%" src="https://github.com/geryxyz/bibHygeia/raw/dev/media/bibHygeia.png"/>
-
-Egy Python alapú referencia gyűjtemény kezelő és karbantartó rendszer, mely a BiBTeX fájlok forráskódszintű kezelését végzi.
-Jelenleg egy parancssori program csomag, mely képes gyakori műveletek autómatizálására.
-A projekt célja, hogy Continuous Integration rendszerben segítse a BiBTeX fájlok karbantartását.
-Idő hiányában nincs aktív fejlesztés alatt. Biber (BibLaTeX), LaTeX és Git biztos, hogy jelentős szerepet játszik majd.
-
-<a href="https://github.com/geryxyz/bibHygeia"><i class="fab fa-github-square"></i> Projekt forráskód</a>
-
-**Hallgatók**
-
-| Név | Elvállalta | Közös munka |
-|--|--|--|
-|Székely Norbert|<i class="far fa-check-circle"></i>|<i class="far fa-check-circle"></i> *amennyiben a szabálysértések felismerésének megvalósítása mind a két altéma része, ezzel csökkentve a függőséget*|
-
-#### Forráskód és egyéb szabálysértések jelzése
-
-#### Szabálysértések javításe, javaslatok megfogalmazása
-
-#### Szabálysértések halmazának bővítése
-
-**Ez az altéma jelenleg nem választható**
-
-## Saját témák
-
-### Veszélyzóna
-
-Kétszemélyes, táblás, körökre osztott, elvont társosjáték.
-
-**Hallgatók**
-
-| Név | Elvállalta |
-|--|--|
-|Kószó Patrick|<i class="far fa-check-circle"></i>|
-
-## Korábbi témák
-
-Korábbi években megoldott problémák. Bizonyos esetben továbbfejlesztési lehetőség is felmerülhet.
-
-### CodeMetropolis
-
-<img class="logo" style="width: 33%" src="/assets/images/logos/codemetropolis.png"/>
-
-**Jelenleg csak egy hallgató vállalhatja el.**  
-Egy Minecraft alapú forrás kód vizuálizaciós parancssori program. Tisztán Java nyelven készült.
-Jelenleg stabil verzióval rendelkezik, ezért első körben tesztelés és karbantartással kapcsolatos munkát jelent.
-
-<a href="http://codemetropolis.github.io/CodeMetropolis/"><i class="fas fa-external-link-alt"></i> Official page</a>
-
-**Hallgatók**
-
-| Név | Elvállalta |
-|--|--|
-|Bányai Zoltán|<i class="far fa-check-circle"></i>| 
-
-### iFL4Eclipse
-
-<img class="logo" style="width: 33%" src="/assets/images/logos/iFL4Eclipse.png"/>
-
-**Nem tudok több hallgatót vállalni**  
-Egy Java alapú Eclipse plug-in. Jelenleg stabil verzióval rendelkezik, továbbfejlesztéssel kapcsolatos feladatokra kell számítani
-
-<a href="https://github.com/sed-szeged/iFL4Eclipse"><i class="fas fa-external-link-alt"></i> Official page</a>
-
-### CROSSMINER
-
-**Nem tudok több hallgatót vállalni**  
-It enables the monitoring, in-depth analysis and evidence-based selection of open source components,
-and facilitates knowledge extraction from large open-source software repositories.
-
-<a href="https://www.crossminer.org/"><i class="fas fa-external-link-alt"></i> Official page</a>
--->

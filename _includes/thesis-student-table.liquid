@@ -1,0 +1,29 @@
+<table>
+    <thead>
+    <tr>
+        <th>Állapot</th>
+        <th>Név</th>
+        <th>Dolgozat címe</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for thesis in include.theses %}
+        {% if thesis.project.name and thesis.state == include.state_filter %}
+            <tr>
+                {% case thesis.state %}
+                    {% when states.open %}
+                        <td style="text-align: center"><i class="fa-solid fa-door-open"></i></td>
+                    {% when states.in_progress %}
+                        <td style="text-align: center"><i class="fa-solid fa-list-check"></i></td>
+                    {% when states.finished %}
+                        <td style="text-align: center"><i class="fa-solid fa-book"></i></td>
+                    {% else %}
+                        <td style="text-align: center"><i class="fa-solid fa-file-circle-question"></i></td>
+                {% endcase %}
+                <td>{{ thesis.author }}</td>
+                <td><a href="#{{ thesis.title | url_encode }}">{{ thesis.title }}</a></td>
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>
