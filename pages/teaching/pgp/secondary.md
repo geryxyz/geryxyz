@@ -177,7 +177,7 @@ LIMIT 5; <span class="comment">//Only return first five records</span>
 Online angol nyelvű oktató anyag elérhető a <a href="https://guides.neo4j.com/sandbox/recommendations/index.html">Neo4J Sandboxban</a>
 </p>
 
-<img src="/_pages/contentcontent/pgp/datamodel_for_open_movie_graph.png" style="width: 300px" />
+<img src="/pages/pgp/datamodel_for_open_movie_graph.png" style="width: 300px" />
 
 ### Keressünk egy példa filmet
 
@@ -261,7 +261,7 @@ def get_genre_of(title):
   return names
 </code></pre>
 
-<img src="/_pages/contentcontent/pgp/paramter-python-cyper.png"/>
+<img src="/pages/pgp/paramter-python-cyper.png"/>
 
 ## Halmazelméleti alapok
 
