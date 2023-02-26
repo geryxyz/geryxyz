@@ -14,6 +14,8 @@ toc: false
 
 ### Végzősöknek
 
+Vállalok szakdolgozat és diplomamunka vezetést. Az egyes témákról és a részletekről az alábbi oldalakon található információ.
+
 <span class="center">
 [<i class="fa-solid fa-circle-info"></i><br/>Információk](#link){: .btn .btn--large .btn--edge}
 [<i class="fa-regular fa-handshake"></i><br/>Jelentkezés](#link){: .btn .btn--large .btn--edge}
@@ -26,4 +28,5 @@ toc: false
 
 <span class="center">
 [<i class="fa-solid fa-brain"></i><br/>Tanítási tapasztalatok](/teaching/experience){: .btn .btn--large .btn--edge}
+[<i class="fa-solid fa-hands-holding-circle"></i><br/>Szakkörök](/teaching/study-groups){: .btn .btn--large .btn--edge}
 </span>
