@@ -550,13 +550,13 @@ theses:
         abstract: >
             "TBA"
     -
-        author: ""
-        title: ""
-        year_of_publish: 0
-        state: ""
-        project: {}
+        author: "Góg Bence"
+        title: "Tesztelési folyamatok és rendszer kifejlesztése a CodeMetropolis projekthez"
+        year_of_publish: null
+        state: *in_progress
+        project: *codemetropolis
         abstract: >
-            ""
+            "TBA"
     -
         author: ""
         title: ""

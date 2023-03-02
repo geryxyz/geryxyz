@@ -5,7 +5,7 @@
 </p>
 <p>{{ include.current_thesis.abstract }}</p>
 {% if include.current_thesis.project.name %}
-    <p>Ez a téma a következő projekthez kapcsolódik: <a href="#{{ include.current_thesis.project.name | url_encode }}">{{ include.current_thesis.project.name }}</a>.</p>
+    <p>Ez a téma a következő projekthez kapcsolódik: <a href="/teaching/graduating/projects#{{ include.current_thesis.project.name | url_encode }}">{{ include.current_thesis.project.name }}</a>.</p>
 {% else %}
     <p>Ez egy hallgató által javasolt téma vagy még nincs hivatalosan projekthez kötve.</p>
 {% endif %}

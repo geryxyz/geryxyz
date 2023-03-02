@@ -8,7 +8,7 @@
     </thead>
     <tbody>
     {% for thesis in include.theses %}
-        {% if thesis.project.name and thesis.state == include.state_filter %}
+        {% if thesis.title and thesis.state == include.state_filter %}
             <tr>
                 {% case thesis.state %}
                     {% when states.open %}
