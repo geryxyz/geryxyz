@@ -1,0 +1,32 @@
+---
+title: Projektek
+permalink: /teaching/graduating/projects
+toc: true
+---
+
+Az alábbi lista azokat a szoftver rendszereket tartalmazza, melyekhez kapcsolódóan különböző dolgozat témák alakíthatóak ki. A hallgatóknak választhatnak a szabad témák közül, módosíthatják azokat, de új témákat is javasolhatnak.
+
+{% assign theses_by_date = site.data.consultation.theses.theses | sort_natural: "year_of_publish" %}
+
+{% for project in site.data.consultation.theses.projects %}
+    <h3 id="{{ project.name | url_encode }}">{{ project.name }} <a class="anchor" href="{{ project.site }}"><i class="fas fa-external-link-alt"></i></a></h3>
+    <img alt="{{ project.name }}" src="{{ project.logo }}" style="width: 15%; tex"/><br/>
+    <table>
+        <tr>
+            <th>Szerző</th>
+            <th>Cím</th>
+        </tr>
+        {% for thesis in theses_by_date %}
+            {% if thesis.project.name == project.name %}
+                <tr>
+                    <td>{% if thesis.author %}{{ thesis.author }}{% endif %}</td>
+                    <td>
+                        {{ thesis.title }}&nbsp;
+                        <a href="/teaching/graduating/topics#{{ thesis.title | url_encode }}"><i class="fa-solid fa-circle-info"></i></a>
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+{% endfor %}
+

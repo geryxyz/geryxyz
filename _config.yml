@@ -31,8 +31,7 @@ paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
-  - _pages
-  - content
+  - pages
 
 exclude:
   - "*.xlsx"
@@ -74,7 +73,7 @@ author:
 
 
 defaults:
-  # _pages
+  # pages
   - scope:
       path: ""
       type: pages

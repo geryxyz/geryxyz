@@ -31,6 +31,12 @@ span.title {
   font-variant: small-caps;
 }
 
+.center {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
 p.list {
   text-align: left;
 }
@@ -103,4 +109,8 @@ svg {
 
 th.mid-title {
   text-align: center;
+}
+
+.btn--edge {
+  border: $link-color 3pt solid;
 }

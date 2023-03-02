@@ -1,0 +1,51 @@
+---
+title: Témák
+permalink: /teaching/graduating/topics
+toc: false
+---
+
+{% assign theses_by_date = site.data.consultation.theses.theses | sort_natural: "year_of_publish" %}
+{% assign theses_by_author = site.data.consultation.theses.theses | sort_natural: "author" %}
+{% assign states = site.data.consultation.theses.states %}
+
+<h2>Témák szerzők szerint</h2>
+
+<h3>Választható témák</h3>
+
+{% include thesis-student-table.liquid theses=theses_by_author state_filter=states.open %}
+
+<h3>Folyamatban lévő dolgozatok</h3>
+
+{% include thesis-student-table.liquid theses=theses_by_author state_filter=states.in_progress %}
+
+<h3>Elkészült dolgozatok</h3>
+
+{% include thesis-student-table.liquid theses=theses_by_author state_filter=states.finished %}
+
+<h2>Választható témák</h2>
+
+A tématervek végleges verziójának kialakítása a hallgatókkal együtt történik, ezzel is lehetőséget adva számukra, hogy értékes ötleteikkel és javaslataikkal hozzájáruljanak a projektek minőségéhez.
+
+{% for thesis in theses_by_date %}
+    {% if thesis.state == states.open %}
+        {% include thesis.liquid current_thesis=thesis %}
+    {% endif %}
+{% endfor %}
+
+<h2>Folyamatban lévő dolgozatok</h2>
+
+{% for thesis in theses_by_date %}
+    {% if thesis.state == states.in_progress %}
+        {% include thesis.liquid current_thesis=thesis %}
+    {% endif %}
+{% endfor %}
+
+<h2>Elkészült dolgozatok</h2>
+
+{% for thesis in theses_by_date %}
+    {% if thesis.state == states.finished %}
+        {% include thesis.liquid current_thesis=thesis %}
+    {% endif %}
+{% endfor %}
+
+
