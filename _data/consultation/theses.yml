@@ -556,7 +556,25 @@ theses:
         state: *in_progress
         project: *codemetropolis
         abstract: >
-            "TBA"
+            Szoftverfejlesztés során számos hiba merülhet fel, amelyek megakadályozzák, hogy a szoftver megfelelően működjön. 
+            A szoftver tesztelése és különféle minőségellenőrző eszközök lehetővé teszik, hogy a szoftverfejlesztők és a tesztelők
+            azonosítsák és kijavítsák ezeket a hibákat mielőtt a szoftver éles környezetbe kerülne.
+            
+            A dolgozatom elkészítéséhez a CodeMetropolis nevezetű alkalmazást szeretném használni. Ez az alkalmazás a Minecraft nevezetű videójátékra
+            épülő vizualizációs eszköz, amely a fejlesztő számára egy adott programról különböző szoftverjellemzőket jelenít meg. A CodeMetropolis 
+            legfrissebb verziója évekkel ezelőtt készült, ami több problémát is felvet. Az alkalmazás nem naprakész, túl régi Java verzióval kompatibilis,
+            emiatt szükség lehet verzió emelésre, illetve az alkalmazás bővítésére új funkciókkal. Ehhez viszont szükség lenne egy olyan rendszerre, 
+            ami segít a hibák felderítésében még azelőtt, hogy a változtatás kikerülne éles környezetbe.
+
+            Az alkalmazások minőségbiztosítása nélkülözhetetlen a fejlesztés során, aminek egyik módja az automatizált tesztelés és minőség-ellenőrzés használata.
+            Az automatizált tesztelés lehetővé teszi a tesztek hatékonyabb végrehajtását és a korai hibák felfedezését, miközben a minőség-ellenőrzés segítségével
+            biztosítani lehet, hogy az alkalmazás a megfelelő minőségi szinten legyen. Egy ilyen rendszer beállítása és karbantartása összetett folyamat,
+            különféle eszközöket igényel melyeket az adott alkalmazáshoz egyedileg kell igazítani.
+
+            Ebben a szakdolgozatban egy olyan rendszer megvalósítását mutatom be, amely a CodeMetropolis alkalmazáshoz állít be automatizált 
+            regressziós tesztelést és minőség-ellenőrzést. A rendszer célja, hogy hatékonyabbá és megbízhatóbbá tegye az alkalmazás tesztelési 
+            folyamatát, és segítse a fejlesztőket a minőségi kód előállításában. A dolgozatomban bemutatom a rendszer tervezését, 
+            megvalósítását és tesztelését, valamint értékelem az elért eredményeket és a rendszer használatának előnyeit és esetleges hátrányait.
     -
         author: ""
         title: ""
