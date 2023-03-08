@@ -21,7 +21,7 @@
                         <td style="text-align: center"><i class="fa-solid fa-file-circle-question"></i></td>
                 {% endcase %}
                 <td>{{ thesis.author }}</td>
-                <td><a href="#{{ thesis.title | url_encode }}">{{ thesis.title }}</a></td>
+                <td><a href="/teaching/graduating/topics#{{ thesis.title | url_encode }}">{{ thesis.title }}</a></td>
             </tr>
         {% endif %}
     {% endfor %}
