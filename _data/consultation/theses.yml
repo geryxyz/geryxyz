@@ -69,10 +69,29 @@ theses:
             képeihez kódokat képes csatolni, amelyek az okostelefonos alkalmazással
             beszkennelhetőek.
     -
-        author: "Adonics Nikolett"
-        title: "BiBTeX és Git alapú referencia kezelő programkönyvtár"
+        author: Adonics Nikolett
+        co_consultant: "Bíró Ádám"
+        title: "Vállalati számlafeldolgozó folyamatot támogató alkalmazás"
         year_of_publish: null
         state: *in_progress
+        project: null
+        abstract: >
+            A feladt egy webalkalmazás elkészítése Angular frontend-del és Spring Boot backenddel,
+            köztük HTTP REST interfésszel, ami lehetővé teszi a felhasználók számára, hogy
+            bejelentkezés után a vállalati számlafeldolgozási folyamat egyes lépéseit a jogosultságaik
+            függvényében elvégezhessék.
+            Az elkészült alkalmazásban lehetőség lesz a számlák metaadatainak hozzáadására és mellé
+            a pdf formátumú számla feltöltésére és letöltésére, a számlák módosítására, listázására, azon
+            belül keresésre és szűrésre. Számlák státuszának állítására is lesz lehetőség a felhasználók
+            jogosultságainak megfelelően.
+            A felhasználók kezelésére: felhasználók bejelentkezésére, új felhasználó hozzáadására,
+            felhasználók módosítására, törlése, jelszavak módosítására és visszaállítására. E-mail
+            küldésére a felhasználóknak.
+    -
+        author: null
+        title: "BiBTeX és Git alapú referencia kezelő programkönyvtár"
+        year_of_publish: null
+        state: *open
         project: *wan_shi_tong
         abstract: >
             A kutatók gyakran hivatkoznak más publikációkra a saját tudományos cikkeikben. Ezeknek
@@ -94,8 +113,8 @@ theses:
     -
         author: "Bányai Zoltán"
         title: "Tesztautomatizáló keretrendszer fejlesztése és regressziós tesztelések végzése a CodeMetropolis szoftver vizualizációs programon"
-        year_of_publish: null
-        state: *in_progress
+        year_of_publish: 2023
+        state: *finished
         project: *codemetropolis
         abstract: >
             A CodeMetropolis egy szoftver vizualizációs program, amelynek segítségével a forráskód egy
@@ -131,8 +150,8 @@ theses:
     -
         author: Szabó Patrik
         title: "A Militarized Zone társasjáték fejlesztése"
-        year_of_publish: null
-        state: *in_progress
+        year_of_publish: 2023
+        state: *finished
         project: null
         abstract: >
             A játék elindításakor egy főmenü jelenik meg amiben a játék elindításához szükséges szabályokat lehet beállítani.
