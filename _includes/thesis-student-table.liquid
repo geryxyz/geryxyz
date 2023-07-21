@@ -4,6 +4,7 @@
         <th>Állapot</th>
         <th>Név</th>
         <th>Dolgozat címe</th>
+        {% if thesis.year_of_publish %}<td>Védés éve</td>{% endif %}
     </tr>
     </thead>
     <tbody>
@@ -22,6 +23,7 @@
                 {% endcase %}
                 <td>{{ thesis.author }}</td>
                 <td><a href="/teaching/graduating/topics#{{ thesis.title | url_encode }}">{{ thesis.title }}</a></td>
+                {% if thesis.year_of_publish %}<td>{{thesis.year_of_publish}}</td>{% endif %}
             </tr>
         {% endif %}
     {% endfor %}
