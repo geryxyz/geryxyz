@@ -12,7 +12,7 @@ permalink: /research
     </tr>
     <tr>
         <th>Workplace</th>
-        <td>Department of Software Engineering<br/>Dugonics square 13., Szeged 6720, Hungary</td>
+        <td>Department of Software Engineering<br/>Árpád square 2., Szeged 6720, Hungary</td>
     </tr>
 </table>
 <p>
