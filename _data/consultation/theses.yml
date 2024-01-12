@@ -181,10 +181,10 @@ theses:
             ezzel biztosítva lehetőséget azon felhasználóknak, akik verziókövető rendszerben kezelik
             a LATEX-dokumentum és hozzá tartozó fájlokat.
     -
-        author: "Nagy Dominik"
+        author: null
         title: "Beadandók automatikus ellenőrzése verziókövető és projektmenedzsment rendszerekben"
         year_of_publish: null
-        state: *in_progress
+        state: *open
         project: null
         abstract: >
             Szakdolgozatom témája, egy olyan alkalmazás elkészítése, amelyet egyaránt oktatók és
@@ -360,11 +360,10 @@ theses:
             A szakdolgozat második témája a CROSSMINER kliensének, egy Eclipse plug-in-nak a belső felépítésének
             bemutatása és a használt architektúra valamint az eseménykezelő rendszer kifejtése.
     -
-        author: Darányi Miklós
-        co_consultant: "Vancsics Béla"
+        author: null
         title: "Ko-Li fájlformátum megalkotása: teszt-kód lefedettségi adatok tárolására alkalmas formátum"
         year_of_publish: null
-        state: *in_progress
+        state: *open
         project: *ko_li
         abstract: >
             Számos eszköz képes mérni a teszt kód lefedettségett, azonban ezek különféle formátumokat,
@@ -391,7 +390,6 @@ theses:
             rugalmas, mely lehetővé teszi különböző részletességű adatok tárolását.
     -
         author: null
-        co_consultant: "Vancsics Béla"
         title: "Ko-Li megjelenítő Python alapú webes alkalmazás a Ko-Li formátumban tárolt adatok ellenőrzésére és megjelenítésére"
         year_of_publish: null
         state: *open
@@ -420,7 +418,6 @@ theses:
             (a tárolt adatok függvényében) megfelelő gyorsasággal képes működni.
     -
         author: null
-        co_consultant: "Vancsics Béla"
         title: "Ko-Li felhasználása spektrum alapú hibalokalizáció kutatása során"
         year_of_publish: null
         state: *open
@@ -487,7 +484,7 @@ theses:
         author: Mezei László
         title: "GitLab issue hálózat grafikus megjelenítése hallgatói munka értékeléséhez"
         year_of_publish: null
-        state: *in_progress
+        state: *finished
         project: null
         abstract: >
             A hallgatók által GitLab-ba feltöltött gyakorlati munka (pl. <a href="https://okt.sed.hu/rf2/gyakorlat/projekt">Rendszerfejlesztés 2</a>) értékelése jelenleg manuálisan történik a
@@ -567,12 +564,52 @@ theses:
         state: *in_progress
         project: null
         abstract: >
-            "TBA"
+            A videojátékokat fejlesztő csapatokban nem csak a programozók, hanem más kiváló
+            szakemberek is dolgoznak, akik a saját szakterületükön magasan képzettek, de nem
+            szükségszerűen rendelkeznek magas szintű számítástechnikai képzettséggel. Ilyen
+            szakemberek például az írók, a game designer-ek, a hangmérnökök és bizonyos művészek.
+            Nem elvárható, hogy a programozókon kívüli összes csapattag képes legyen a saját munkája
+            különböző verzióival módosítani, majd beüzemelni a játék fejlesztés alatt álló verzióját
+            önellenőrzés céljából. Így bizonyos területeken előforduló hibák gyakran csak később lesznek
+            felfedezve, sokszor csak a kiadás után, ami nem optimális.
+            
+            Az általam elképzelt szoftver hatékonyabbá tenné a játékfejlesztést azzal, hogy standard
+            felhasználói felületet biztosít a játék nem programkód jellegű elemeinek módosítására,
+            cseréjére. A fejlesztés alatt álló játékszoftver aztán szintén ettől a szoftvertől kaphatná meg
+            például fordítás során az adatokat. Így például egy modelleket készítő munkatársnak nem
+            kellene egy apró módosítás után tesztelői visszajelzésre várnia, rögtön ellenőrizheti a
+            módosítást egy lokális változat elindításával, mindezt anélkül hogy bármilyen fájl útvonalát vagy
+            a fordítási folyamatot a fejlesztőkhöz hasonló mélységben ismeri. A standard felület mellett szól
+            még az is, hogy a csapatoknak kevesebb belső használatra szánt eszközt kell fejlesztenie egy
+            ilyen szoftver használatával. Csökkentené ezen kívül az egyszerűbb hibák előfordulását is,
+            hiszen egy 3D modellt például a feltöltöttek közül előnézettel támogatva lehet kiválasztani, az új
+            verziókat csak fel kellene tölteni egy böngészős felületre.
+            A szoftver alapvetően gráfadatbázisokat tudna használni, ezek kezelésére szeretném
+            felkészíteni a következő okokból: a legtöbb elem ami egy videojátékban előfordul könnyen
+            elképzelhető egy gráf csomópontjaiként. Bizonyos videojáték műfajok esetén kifejezetten
+            célszerű lehet ez a gondolkodásmód, mert ez a szemlélet segíthet is a játék megalkotása során.
+            Például könnyedén meghatározható ezáltal az, hogy egy NPC[1] pontosan hol és hány helyen
+            fordul elő a játékban, ezzel kiszűrhető ha egy fontosabbnak szánt karakternek nincs elég
+            szerepe a játékban. Láthatóvá tehető lenne az is, hogy milyen dialógusai vannak a
+            karaktereknek, ezáltal könnyen ellenőrizhető lenne ezek stílusa, ami elősegíti a konzisztencia
+            kialakítását hihetőbb, életszerűbb karakterek létrehozásához.
+            
+            A szoftver használatához a csapatoknak implementálnia kell az adatlekérést a ebből
+            szoftverből, illetve kiválasztani az adatbázis(oka)t ami(ke)t szeretnének a fejlesztés során
+            használni. Ezután a következő lépés feltölteni a játék elemeihez tartozó sémákat. Az utolsó
+            lépés pedig az adatok feltöltése (felhasználók, jogosultságok beállítása, illetve a játékhoz
+            tartozó adatok feltöltése). A rendszer ettől a ponttól kezdve már a fejlesztési folyamat része,
+            használható a csapattagok számára.
+            A tervek szerint az elkészült rendszer könnyen bővíthető, testre szabható és beemelhető
+            lesz az azt felhasználó csapatok számára. A kezdeti cél a kisebb videojáték fejlesztő csapatok
+            elérése, távlati cél pedig a nagy költségvetésű és komplexebb játékokat fejlesztő csapatok
+            bevonása. Az elkészült szoftver nyílt forráskódú lesz, ingyenes és esetlegesen fizetős
+            támogatással.
     -
         author: "Góg Bence"
         title: "Tesztelési folyamatok és rendszer kifejlesztése a CodeMetropolis projekthez"
         year_of_publish: null
-        state: *in_progress
+        state: *finished
         project: *codemetropolis
         abstract: >
             Szoftverfejlesztés során számos hiba merülhet fel, amelyek megakadályozzák, hogy a szoftver megfelelően működjön. 
