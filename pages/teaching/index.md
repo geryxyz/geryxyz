@@ -7,7 +7,6 @@ toc: false
 ## Hallgatóknak
 
 <span class="center">
-[蒙<br/>Ars Peadagogiae](/teaching/ars-peadagogiae){: .btn .btn--large .btn--edge}
 [<i class="fa-regular fa-comments"></i><br/>Fogadó óra](/teaching/consulting-hours){: .btn .btn--large .btn--edge}
 [<i class="fa-solid fa-chalkboard-user"></i><br/>Kurzusok](/teaching/courses){: .btn .btn--large .btn--edge}
 </span>
