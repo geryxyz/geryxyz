@@ -72,8 +72,8 @@ theses:
         author: Adonics Nikolett
         co_consultant: "Bíró Ádám"
         title: "Vállalati számlafeldolgozó folyamatot támogató alkalmazás"
-        year_of_publish: null
-        state: *in_progress
+        year_of_publish: 2023
+        state: *finished
         project: null
         abstract: >
             A feladt egy webalkalmazás elkészítése Angular frontend-del és Spring Boot backenddel,
@@ -288,8 +288,8 @@ theses:
         author: "Papp Gábor Sándor"
         co_consultant: "Horváth Ferenc"
         title: "Hibalokalizációhoz szükséges kód lefedettségi adatok számításának integrációja az Eclipse fejlesztő környezetbe"
-        year_of_publish: null
-        state: *in_progress
+        year_of_publish: 2022
+        state: *finished
         project: *ifl4eclipse
         abstract: >
             Mára a programozók munkájának elengedhetetlen eszközévé váltak a különböző fejlesztői környezetek,
@@ -560,8 +560,8 @@ theses:
     -
         author: "Kocsis Botond József"
         title: "Játékfejlesztést támogató adatbázis-játékmotor interfész"
-        year_of_publish: null
-        state: *in_progress
+        year_of_publish: 2024
+        state: *finished
         project: null
         abstract: >
             A videojátékokat fejlesztő csapatokban nem csak a programozók, hanem más kiváló
