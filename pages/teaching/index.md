@@ -37,6 +37,13 @@ Jelenleg {{ in_progress_count }} hallgatóval dolgozok együtt szakdolgozaton va
 
 {% include thesis-student-table.liquid theses=theses_by_author state_filter=states.in_progress %}
 
+## Phd hallgatóknak - For PhD Students
+
+<span class="center">
+[<i class="fa-solid fa-file-shield"></i><br/>How I write reviews?](/teaching/phd-students/how-i-write-reviews){: .btn .btn--large .btn--edge}
+</span>
+
+
 ## Érdeklődőknek
 
 <span class="center">
